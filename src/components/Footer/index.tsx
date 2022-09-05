@@ -40,7 +40,7 @@ const Footer = ({ t }: any) => {
         key={src}
         aria-label={src}
       >
-        <SvgIcon src={src} width="25px" height="25px" />
+        <SvgIcon src={src} width="45px" height="45px" />
       </a>
     );
   };
@@ -60,32 +60,19 @@ const Footer = ({ t }: any) => {
                 <Chat>{t(`Let's Chat`)}</Chat>
               </a>
             </Col>
-            <Col lg={8} md={8} sm={12} xs={12}>
-              <Title>{t("Policy")}</Title>
-              <Large to="/" left="true">
-                {t("Application Security")}
-              </Large>
-              <Large left="true" to="/">
-                {t("Software Principles")}
-              </Large>
-            </Col>
+          
             <Col lg={6} md={6} sm={12} xs={12}>
               <Empty />
-              <Large left="true" to="/">
-                {t("Support Center")}
-              </Large>
-              <Large left="true" to="/">
-                {t("Customer Support")}
-              </Large>
+        
             </Col>
           </Row>
           <Row justify="space-between">
             <Col lg={10} md={10} sm={12} xs={12}>
               <Empty />
               <Language>{t("Address")}</Language>
-              <Para>Rancho Santa Margarita</Para>
-              <Para>2131 Elk Street</Para>
-              <Para>California</Para>
+              <Para>R. Manoel Araújo, 274</Para>
+              <Para>11432-390 - Santo Antônio</Para>
+              <Para>Guarujá/SP - Brazil</Para>
             </Col>
             <Col lg={8} md={8} sm={12} xs={12}>
               <Title>{t("Company")}</Title>
@@ -105,17 +92,17 @@ const Footer = ({ t }: any) => {
             <Col lg={6} md={6} sm={12} xs={12}>
               <Label htmlFor="select-lang">{t("Language")}</Label>
               <LanguageSwitchContainer>
-                <LanguageSwitch onClick={() => handleChange("en")}>
+                <LanguageSwitch onClick={() => handleChange("enus")}>
                   <SvgIcon
-                    src="united-states.svg"
+                    src="us.png"
                     aria-label="homepage"
                     width="30px"
                     height="30px"
                   />
                 </LanguageSwitch>
-                <LanguageSwitch onClick={() => handleChange("es")}>
+                <LanguageSwitch onClick={() => handleChange("ptbr")}>
                   <SvgIcon
-                    src="spain.svg"
+                    src="brazil.png"
                     aria-label="homepage"
                     width="30px"
                     height="30px"
@@ -136,36 +123,33 @@ const Footer = ({ t }: any) => {
             <NavLink to="/">
               <LogoContainer>
                 <SvgIcon
-                  src="logo.svg"
+                  src="logo.jpeg"
                   aria-label="homepage"
-                  width="101px"
-                  height="64px"
+                  width="144px"
+                  height="48px"
                 />
               </LogoContainer>
             </NavLink>
             <FooterContainer>
               <SocialLink
-                href="https://github.com/Adrinlol/create-react-app-adrinlol"
-                src="github.svg"
+                href="https://www.facebook.com/profile.php?id=100082874455658"
+                src="face.svg"
               />
               <SocialLink
-                href="https://twitter.com/Adrinlolx"
-                src="twitter.svg"
+                href="https://api.whatsapp.com/send?phone=5513988032388"
+                src="whats.svg"
+              />
+
+
+              <SocialLink
+                href="ttps://instagram.com/lna_assessoriadigital"
+                src="insta.svg"
               />
               <SocialLink
-                href="https://www.linkedin.com/in/lasha-kakabadze/"
-                src="linkedin.svg"
+                href="mailto:lnaassessoriadigital@gmail.com"
+                src="mail.png"
               />
-              <SocialLink
-                href="https://medium.com/@lashakakabadze/"
-                src="medium.svg"
-              />
-              <a href="https://www.buymeacoffee.com/adrinlol">
-                <img
-                  src="https://img.buymeacoffee.com/button-api/?text=Buy me a pizza&emoji=🍕&slug=adrinlol&button_colour=FF5F5F&font_colour=ffffff&font_family=Lato&outline_colour=000000&coffee_colour=FFDD00"
-                  alt="Buy me a pizza"
-                />
-              </a>
+       
             </FooterContainer>
           </Row>
         </Container>

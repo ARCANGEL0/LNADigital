@@ -1,8 +1,9 @@
 {
+  "About us": "About us",
   "About": "About",
   "Policy": "Policy",
-  "Mission": "Mission",
-  "Product": "Product",
+  "Services": "Services",
+  "Portfolio": "Portfolio",
   "Tell us everything": "Tell us everything",
   "Contact": "Contact",
   "Do you have any question? Feel free to reach out.": "Do you have any question? Feel free to reach out.",
@@ -19,6 +20,8 @@
   "Learn more": "Learn more",
   "Get started": "Get started",
   "Submit": "Submit",
+    "Company": "Company",
+
   "Message" : "Message",
   "Your Message": "Your Message",
   "Name" : "Name",

@@ -2,6 +2,14 @@ import { createGlobalStyle } from "styled-components";
 
 export const Styles = createGlobalStyle`
 
+
+--space-cadet: #212738ff;
+--bittersweet: #f97068ff;
+--maximum-green-yellow: #d1d646ff;
+--cultured: #edf2efff;
+--vivid-sky-blue: #57c4e5ff;
+
+
     @font-face {
         font-family: "Motiva Sans Light";
         src: url("/fonts/Motiva-Sans-Light.ttf") format("truetype");
@@ -32,7 +40,7 @@ export const Styles = createGlobalStyle`
     }
 
     a:hover {
-        color: #18216d;
+        color: red !important;
     }
 
     input,
@@ -47,7 +55,7 @@ export const Styles = createGlobalStyle`
 
         :focus-within {
             background: none;
-            box-shadow: #2e186a 0px 0px 0px 1px;
+            box-shadow: #ff0000 0px 0px 0px 1px;
         }
     }
 
@@ -58,7 +66,7 @@ export const Styles = createGlobalStyle`
     h5,
     h6 {
         font-family: 'Motiva Sans Bold', serif;
-        color: #18216d;
+        color: #212738;
         font-size: 56px;
         line-height: 1.18;
 
@@ -72,7 +80,7 @@ export const Styles = createGlobalStyle`
     }
 
     p {
-        color: #18216d;
+        color: #212738;
         font-size: 21px;        
         line-height: 1.41;
     }
@@ -84,10 +92,10 @@ export const Styles = createGlobalStyle`
     a {
         text-decoration: none;
         outline: none;
-        color: #2E186A;
+        color: #ff0000;
 
         :hover {
-            color: #2e186a;
+            color: red !important;
         }
     }
     

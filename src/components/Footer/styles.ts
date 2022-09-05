@@ -62,9 +62,9 @@ export const Large = styled(Link)<any>`
   max-width: max-content;
 
   &:hover {
-    color: rgb(255, 130, 92);
+    color: #B64F50;
     text-underline-position: under;
-    text-decoration: rgb(255, 130, 92) wavy underline;
+    text-shadow: #bc3a3a 0 2.5px 3.5px;;
   }
 `;
 
@@ -77,8 +77,8 @@ export const Chat = styled("p")`
   transition: all 0.3s ease-in-out;
 
   &:hover {
-    border-bottom: 1px solid rgb(255, 130, 92);
-    color: rgb(255, 130, 92);
+    border-bottom: 1px solid #B64F50;
+    color: #B64F50;
   }
 `;
 
@@ -121,7 +121,7 @@ export const FooterContainer = styled("div")`
     height: 25px;
 
     &:hover {
-      fill: rgb(255, 130, 92);
+      fill: #B64F50;
     }
   }
 `;

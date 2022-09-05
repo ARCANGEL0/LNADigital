@@ -2,16 +2,16 @@ import i18n from "i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 import XHR from "i18next-xhr-backend";
 
-import translationEn from "./locales/en/translation.json";
-import translationEs from "./locales/es/translation.json";
+import translationEnus from "./locales/enus/translation.json";
+import translationPtbr from "./locales/ptbr/translation.json";
 
 i18n
   .use(XHR)
   .use(LanguageDetector)
   .init({
     debug: false,
-    lng: "en",
-    fallbackLng: "en",
+    lng: "ptbr",
+    fallbackLng: "ptbr",
 
     keySeparator: false,
     interpolation: {
@@ -19,11 +19,11 @@ i18n
     },
 
     resources: {
-      en: {
-        translations: translationEn,
+      enus: {
+        translations: translationEnus,
       },
-      es: {
-        translations: translationEs,
+      ptbr: {
+        translations: translationPtbr,
       },
     },
     ns: ["translations"],
