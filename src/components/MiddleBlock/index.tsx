@@ -2,10 +2,9 @@ import { Row, Col, Card,  } from "antd";
 import { withTranslation } from "react-i18next";
 import {HiOutlineLightBulb} from 'react-icons/hi';
 import {AiOutlineNotification} from 'react-icons/ai';
-import {IoShareSocialSharp} from 'react-icons/io';
-import {MdOutlinePhonelink} from 'react-icons/md';
-import {TbSocial} from 'react-icons/tb';
-
+import {IoShareSocialSharp, IoRocket} from 'react-icons/io5';
+import {MdOutlinePhonelink, MdPhonelinkSetup} from 'react-icons/md';
+  
 import { Slide } from "react-awesome-reveal";
 import { Button } from "../../common/Button";
 import { MiddleBlockSection, Content, ContentWrapper } from "./styles";
@@ -70,7 +69,7 @@ const MiddleBlock = ({ title, content, button,id, t }: MiddleBlockProps) => {
       <MdOutlinePhonelink className="cardIcon"/>
       </>
     } 
-      className="serviceCard" title="Criação de sites" hoverable={true} bordered={true}>
+      className="serviceCard" title="Criação de sites e aplicativos" hoverable={true} bordered={true}>
           Card content
         </Card>
       </Col>
@@ -85,7 +84,7 @@ const MiddleBlock = ({ title, content, button,id, t }: MiddleBlockProps) => {
       <IoShareSocialSharp className="cardIcon"/>
       </>
     } 
-      className="serviceCard" title="Gestão de redes sociais" hoverable={true} bordered={true}>
+      className="serviceCard" title="Social media" hoverable={true} bordered={true}>
           Card content
         </Card>
       </Col>
@@ -96,10 +95,10 @@ const MiddleBlock = ({ title, content, button,id, t }: MiddleBlockProps) => {
         <Card  cover={ <> 
                     <br/>
 
-      <TbSocial className="cardIcon"/>
+      <MdPhonelinkSetup className="cardIcon"/>
       </>
     } 
-      className="serviceCard" title="Card title" hoverable={true} bordered={true}>
+      className="serviceCard" title="Design digital" hoverable={true} bordered={true}>
           Card content
         </Card>
       </Col>
@@ -108,10 +107,10 @@ const MiddleBlock = ({ title, content, button,id, t }: MiddleBlockProps) => {
         <Card  cover={ <> 
                     <br/>
 
-      <AiOutlineNotification className="cardIcon"/>
+      <IoRocket className="cardIcon"/>
       </>
     } 
-      className="serviceCard" title="Card title" hoverable={true} bordered={true}>
+      className="serviceCard" title="Gestão de tráfego" hoverable={true} bordered={true}>
           Card content
         </Card>
       </Col>
