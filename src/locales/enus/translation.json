@@ -3,6 +3,20 @@
   "About": "About",
   "Policy": "Policy",
   "Services": "Services",
+
+"Name is required": "Name is required",
+"Email address is required": "Email address is required",
+"Email address is invalid": "Email address is invalid",
+
+"Message is required": "Message is required",
+"Our portfolio": "Our portfolio",
+"Error": "Error",
+"Success": "Success",
+"Message sent!": "Message sent!",
+"Message not sent!": "Message not sent!",
+
+
+
   "Portfolio": "Portfolio",
   "Tell us everything": "Tell us everything",
   "Contact": "Contact",
@@ -17,8 +31,8 @@
   "Careers & Culture": "Careers & Culture",
   "Language": "Language",
   "Explore": "Explore",
-  "Learn more": "Learn more",
-  "Get started": "Get started",
+  "Learn more": "Learn more", 
+  "Get in touch": "Get in touch",
   "Submit": "Submit",
     "Company": "Company",
 

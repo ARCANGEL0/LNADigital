@@ -8,7 +8,7 @@ export const Styles = createGlobalStyle`
 --maximum-green-yellow: #d1d646ff;
 --cultured: #edf2efff;
 --vivid-sky-blue: #57c4e5ff;
-
+--dark-blue: #3e8ba3;
 
     @font-face {
         font-family: "Motiva Sans Light";
@@ -46,7 +46,7 @@ export const Styles = createGlobalStyle`
     input,
     textarea {
         border-radius: 4px;
-        border: 0;
+            border: 1px solid #cacaca;
         background: rgb(241, 242, 243);
         transition: all 0.3s ease-in-out;  
         outline: none;
@@ -55,7 +55,7 @@ export const Styles = createGlobalStyle`
 
         :focus-within {
             background: none;
-            box-shadow: #ff0000 0px 0px 0px 1px;
+            box-shadow: #034991 0px 0px 0px 1px;
         }
     }
 
@@ -107,6 +107,7 @@ export const Styles = createGlobalStyle`
         text-align: center;
     }
 
+
     .ant-drawer-body {
         display: flex;
         flex-direction: column;
@@ -117,4 +118,85 @@ export const Styles = createGlobalStyle`
     .ant-drawer-content-wrapper {
         width: 300px !important;
     }
+    .slick-slide img {
+        padding-left: 25px;
+        padding-right: 25px;
+        height: 42vh;
+        width: 42vw !important;
+
+
+              @media only screen and (max-width: 890px) {
+                    padding-left: 20vw !important;
+        padding-right: 20vw !important;
+          height: 27vh;
+        width: 80vw !important;
+        }
+      
+        @media only screen and (max-width: 414px) {
+              padding-left: 20vw !important;
+        padding-right: 20vw !important;
+               height: 27vh;
+        width: 80vw !important;
+        }
+
+
+    }
+    .slick-slider { 
+        margin-left: -25vw !important;
+        width: 90vw !important;
+
+              @media only screen and (max-width: 890px) {
+          margin-left: 0vw !important;
+        }
+      
+        @media only screen and (max-width: 414px) {
+          margin-left: 0vw !important;
+        }
+    }
+    .cardIcon { 
+    font-size: 370%;
+    }
+    .serviceCard { 
+            border: 1px solid #c2c2c2;
+            box-shadow
+    }
+
+    .ant-card-head{ 
+
+        background: rgb(187, 0, 0);
+        width: 18.5vw;
+        margin-left: -1.5vw;
+        height: 10px;
+        margin-top: 1.5vh;
+
+
+    }
+.ant-card-head-title {
+padding: 12px 0;
+font-weight: 800;
+color: #fff;
+}
+.ant-card-head::before {
+  content: "";
+  border: 10px solid;
+  border-color: rgb(95,0,0) rgb(95,0,0) transparent transparent;
+  position: absolute;
+  left: -20px;
+  bottom: 125px;
+}
+.ant-card-head::after{
+    right: -20px !important;
+      content: "";
+  border: 10px solid;
+  border-color: rgb(95,0,0) rgb(95,0,0) transparent transparent;
+  position: absolute;
+
+  bottom: 125px;
+}
+
+.ant-card-head::after {
+  left: auto;
+  right: 0;
+  border-color: rgb(95,0,0) transparent transparent rgb(95,0,0);
+}
 `;

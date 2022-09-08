@@ -1,39 +1,65 @@
 import { useState, useEffect } from "react";
-import { notification } from "antd";
+import emailjs from '@emailjs/browser';
 import axios from "axios";
 
-export const useForm = (validate: any) => {
+export const useForm = (validate: any, carregar: any, openNotificationWithIcon: any) => {
   const [values, setValues] = useState({});
   const [errors, setErrors] = useState({});
   const [shouldSubmit, setShouldSubmit] = useState(false);
-
-  const openNotificationWithIcon = () => {
-    notification["success"]({
-      message: "Success",
-      description: "Your message has been sent!",
-    });
-  };
+ const [emailsent, setEmailsent] = useState(false);
+ 
 
   const handleSubmit = (event: React.ChangeEvent<HTMLFormElement>) => {
     event.preventDefault();
+ 
+
     setErrors(validate(values));
+
     // Your url for API
-    const url = "";
-    if (Object.keys(values).length === 3) {
-      axios
-        .post(url, {
-          ...values,
-        })
-        .then(() => {
-          setShouldSubmit(true);
-        });
+
+    if (Object.keys(values).length === 3 && shouldSubmit) {
+
+        carregar(true)
+   
+
+var templateParams = {
+    from_name: Object.values(values)[0],
+    reply_to: Object.values(values)[1],
+    message: Object.values(values)[2],
+
+
+};
+ 
+emailjs.send('service_tsqncfl', 'template_n281ssn', templateParams, 'VPWshh0QHyiBo4Lc_') 
+    .then(function(response) {
+    carregar(false);
+    openNotificationWithIcon('success');
+     setEmailsent(true);
+       console.log('SUCCESS!', response.status, response.text);
+    }, function(error) {
+          carregar(false);
+
+           openNotificationWithIcon('error');
+       console.log('FAILED...', error);
+    });
+  
+
+          
+     
     }
   };
 
   useEffect(() => {
-    if (Object.keys(errors).length === 0 && shouldSubmit) {
+
+    if(Object.keys(errors).length === 0) 
+    {
+      setShouldSubmit(true)
+    }
+    if (emailsent) {
+
       setValues("");
-      openNotificationWithIcon();
+      setShouldSubmit(false)
+      setEmailsent(false)
     }
   }, [errors, shouldSubmit]);
 

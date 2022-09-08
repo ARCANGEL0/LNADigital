@@ -7,6 +7,7 @@ export const MiddleBlockSection = styled("section")`
   display: flex;
   justify-content: center;
 
+
   @media screen and (max-width: 1024px) {
     padding: 5.5rem 0 3rem;
   }
@@ -14,6 +15,8 @@ export const MiddleBlockSection = styled("section")`
 
 export const Content = styled("p")`
   padding: 0.75rem 0 0.75rem;
+  width: 100vw;
+  margin-left:-15.85vw;
 `;
 
 export const ContentWrapper = styled("div")`
