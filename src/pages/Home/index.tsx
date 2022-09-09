@@ -42,7 +42,7 @@ const Home = () => {
         icon="developer.svg"
         id="intro"
       />
-   
+   */}
       <ContentBlock
         type="left"
         title={AboutContent.title}
@@ -50,7 +50,7 @@ const Home = () => {
         section={AboutContent.section}
         icon="graphs.svg" 
         id="about"
-      />*/}
+      />
  
          <MiddleBlock
         title='Services'

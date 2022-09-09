@@ -114,22 +114,17 @@ const Footer = ({ t }: any) => {
         </Container>
       </FooterSection>
       <Extra>
-        <Container border={true}>
+        <Container 
+
+        border={true}>
+        
+
           <Row
             justify="space-between"
             align="middle"
-            style={{ paddingTop: "3rem" }}
+            style={{ paddingTop: "1rem", justifyContent:'space-evenly'}}
           >
-            <NavLink to="/">
-              <LogoContainer>
-                <SvgIcon
-                  src="logo.jpeg"
-                  aria-label="homepage"
-                  width="144px"
-                  height="48px"
-                />
-              </LogoContainer>
-            </NavLink>
+           
             <FooterContainer>
               <SocialLink
                 href="https://www.facebook.com/profile.php?id=100082874455658"
@@ -151,6 +146,14 @@ const Footer = ({ t }: any) => {
               />
        
             </FooterContainer>
+          </Row>
+          <Row       
+   justify="space-between"
+            align="middle"
+                style={{ paddingTop:'5px', textAlign:'center',justifyContent:'space-evenly' }}
+>
+             <strong> L.N.A Assessoria Digital @ <i style={{color:'rgb(30, 10, 10)'}}> {new Date().getFullYear()} </i> <br/>
+               Todos os direitos reservados</strong>
           </Row>
         </Container>
       </Extra>

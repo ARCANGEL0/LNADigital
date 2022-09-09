@@ -107,7 +107,52 @@ export const Styles = createGlobalStyle`
         text-align: center;
     }
 
+.footerLinks {
 
+padding-top: 1rem;
+justify-content: 'space-evenly';
+
+
+
+              @media only screen and (max-width: 890px) {
+                    padding-left: 20vw !important;
+        padding-right: 20vw !important;
+          height: 27vh;
+        width: 80vw !important;
+        }
+      
+        @media only screen and (max-width: 414px) {
+              padding-left: 20vw !important;
+        padding-right: 20vw !important;
+               height: 27vh;
+        width: 80vw !important;
+        }
+
+
+}
+.footer {
+
+padding-top: 5px;
+text-align: 'center';
+justify-content: 'space-evenly';
+
+
+
+              @media only screen and (max-width: 890px) {
+                    padding-left: 20vw !important;
+        padding-right: 20vw !important;
+          height: 27vh;
+        width: 80vw !important;
+        }
+      
+        @media only screen and (max-width: 414px) {
+              padding-left: 20vw !important;
+        padding-right: 20vw !important;
+               height: 27vh;
+        width: 80vw !important;
+        }
+
+}
     .ant-drawer-body {
         display: flex;
         flex-direction: column;
@@ -159,6 +204,22 @@ export const Styles = createGlobalStyle`
     .serviceCard { 
             border: 1px solid #c2c2c2;
             box-shadow
+
+
+                     @media only screen and (max-width: 890px) {
+                  width: 60vw;
+                  margin-left: 26vw;
+                  margin-bottom: 2.5vh;
+        }
+      
+        @media only screen and (max-width: 414px) {
+                  width: 60vw;
+                  margin-left: 26vw;
+                  margin-bottom: 2.5vh;
+
+        }
+
+
     }
 
     .ant-card-head{ 
@@ -169,6 +230,51 @@ export const Styles = createGlobalStyle`
         height: 10px;
         margin-top: 1.5vh;
 
+
+                     @media only screen and (max-width: 890px) {
+                  width: 70.5vw;
+                  margin-left: -5.6vw;
+        }
+      
+        @media only screen and (max-width: 414px) {
+                  width: 70.5vw;
+                  margin-left: -5.6vw;
+
+        }
+
+
+
+    }
+
+
+.cRDcaM { 
+max-width: 240px;
+
+
+
+              @media only screen and (max-width: 890px) {
+                 max-width: 50px !important;
+
+        }
+      
+        @media only screen and (max-width: 414px) {
+           max-width: 50px !important;
+
+        }
+
+
+}
+    .ant-row {
+
+               @media only screen and (max-width: 890px) {
+                   flex-flow: column wrap !important;
+          margin-left: 0vw !important;
+        }
+      
+        @media only screen and (max-width: 414px) {
+           flex-flow: column wrap !important;
+          margin-left: 0vw !important;
+        }
 
     }
 .ant-card-head-title {

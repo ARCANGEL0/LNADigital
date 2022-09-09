@@ -1,10 +1,10 @@
 import { Row, Col, Card,  } from "antd";
 import { withTranslation } from "react-i18next";
-import {HiOutlineLightBulb} from 'react-icons/hi';
-import {AiOutlineNotification} from 'react-icons/ai';
+import {ImSearch} from 'react-icons/im';
 import {IoShareSocialSharp, IoRocket} from 'react-icons/io5';
-import {MdOutlinePhonelink, MdPhonelinkSetup} from 'react-icons/md';
-  
+import { GiStarsStack} from 'react-icons/gi';
+import {AiTwotoneNotification} from 'react-icons/ai';
+import {FaLaptopCode, FaRegLightbulb} from 'react-icons/fa';
 import { Slide } from "react-awesome-reveal";
 import { Button } from "../../common/Button";
 import { MiddleBlockSection, Content, ContentWrapper } from "./styles";
@@ -42,10 +42,10 @@ const MiddleBlock = ({ title, content, button,id, t }: MiddleBlockProps) => {
                     <br/>
 
 
-      <AiOutlineNotification className="cardIcon"/>
+      <ImSearch className="cardIcon"/>
       </>
     } title="Otimização De Sites - SEO " hoverable={true} bordered={true}>
-          Card content
+     Conteudo
         </Card>
       </Col>
                   <Col span={3}></Col>
@@ -53,11 +53,12 @@ const MiddleBlock = ({ title, content, button,id, t }: MiddleBlockProps) => {
         <Card  cover={ <> 
                     <br/>
 
-      <HiOutlineLightBulb className="cardIcon"/>
+      <FaRegLightbulb className="cardIcon"/>
       </>
     } 
       className="serviceCard" title="Marketing digital" hoverable={true} bordered={true}>
-          Card content
+Conteudo
+
         </Card>
       </Col>
                   <Col span={3}></Col>
@@ -66,11 +67,11 @@ const MiddleBlock = ({ title, content, button,id, t }: MiddleBlockProps) => {
         <Card  cover={ <> 
                     <br/>
 
-      <MdOutlinePhonelink className="cardIcon"/>
+      <FaLaptopCode className="cardIcon"/>
       </>
     } 
-      className="serviceCard" title="Criação de sites e aplicativos" hoverable={true} bordered={true}>
-          Card content
+      className="serviceCard" title="Criação de sites" hoverable={true} bordered={true}>
+  Conteudo
         </Card>
       </Col>
     </Row>
@@ -81,11 +82,11 @@ const MiddleBlock = ({ title, content, button,id, t }: MiddleBlockProps) => {
         <Card  cover={ <> 
                     <br/>
 
-      <IoShareSocialSharp className="cardIcon"/>
+      <AiTwotoneNotification className="cardIcon"/>
       </>
     } 
-      className="serviceCard" title="Social media" hoverable={true} bordered={true}>
-          Card content
+      className="serviceCard" title="Redes sociais" hoverable={true} bordered={true}>
+    Conteudo
         </Card>
       </Col>
                         <Col span={3}></Col>
@@ -95,11 +96,11 @@ const MiddleBlock = ({ title, content, button,id, t }: MiddleBlockProps) => {
         <Card  cover={ <> 
                     <br/>
 
-      <MdPhonelinkSetup className="cardIcon"/>
+      <GiStarsStack className="cardIcon"/>
       </>
     } 
-      className="serviceCard" title="Design digital" hoverable={true} bordered={true}>
-          Card content
+      className="serviceCard" title="Identidade visual" hoverable={true} bordered={true}>
+          Conteudo
         </Card>
       </Col>
          <Col span={3}></Col>
@@ -111,7 +112,7 @@ const MiddleBlock = ({ title, content, button,id, t }: MiddleBlockProps) => {
       </>
     } 
       className="serviceCard" title="Gestão de tráfego" hoverable={true} bordered={true}>
-          Card content
+     Conteudo
         </Card>
       </Col>
     </Row>
