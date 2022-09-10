@@ -4,6 +4,11 @@ export interface ContentBlockProps {
   content: string;
   section?: any;
   button?: any;
+  imgId: string;
+  rowClass:string;
+  width: any;
+  height: any;
+  
   t?: any;
   id: string;
   type?: string;

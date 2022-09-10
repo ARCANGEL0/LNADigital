@@ -48,9 +48,9 @@ export const Burger = styled("div")`
   }
 
   display: none;
-
+margin-left: 85%;
   svg {
-    fill: #ff0000;
+    fill: #fff;
   }
 `;
 
@@ -91,9 +91,14 @@ export const Outline = styled(MenuOutlined)<any>`
 `;
 
 export const Span = styled("span")`
+
+@media only screen and (max-width: 768px) {
+    color: #404041
+  }
+
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-
+  color: #fff;
   &:hover,
   &:active,
   &:focus {

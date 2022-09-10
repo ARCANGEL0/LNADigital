@@ -17,6 +17,10 @@ const RightBlock = ({
   button,
   icon,
   t,
+  imgId,
+  width,
+  height,
+  rowClass,
   id,
 }: ContentBlockProps) => {
   const scrollTo = (id: string) => {
@@ -26,9 +30,9 @@ const RightBlock = ({
     });
   };
   return (
-    <RightBlockContainer>
+    <RightBlockContainer id={id} >
       <Fade direction="right">
-        <Row justify="space-between" align="middle" id={id}>
+        <Row justify="space-between" align="middle" className={rowClass}>
           <Col lg={11} md={11} sm={11} xs={24}>
             <ContentWrapper>
               <h6>{t(title)}</h6>
@@ -41,7 +45,7 @@ const RightBlock = ({
                         key={id}
                         color={item.color}
                         fixedWidth={true}
-                        onClick={() => scrollTo("about")}
+                        onClick={() => scrollTo("services")}
                       >
                         {t(item.title)}
                       </Button>
@@ -51,7 +55,9 @@ const RightBlock = ({
             </ContentWrapper>
           </Col>
           <Col lg={11} md={11} sm={12} xs={24}>
-            <SvgIcon src={icon} width="100%" height="100%" />
+          {icon === ''  ?   '' : 
+            <SvgIcon imgId={imgId} src={icon} width={width} height={height} />
+          }
           </Col>
         </Row>
       </Fade>

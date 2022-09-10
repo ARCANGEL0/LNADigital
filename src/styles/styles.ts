@@ -10,6 +10,7 @@ export const Styles = createGlobalStyle`
 --vivid-sky-blue: #57c4e5ff;
 --dark-blue: #3e8ba3;
 
+
     @font-face {
         font-family: "Motiva Sans Light";
         src: url("/fonts/Motiva-Sans-Light.ttf") format("truetype");
@@ -35,7 +36,7 @@ export const Styles = createGlobalStyle`
         padding:0;
         border: 0;
         outline: 0;
-        background: #fff;
+        background-image: #fff;
         overflow-x: hidden;
     }
 
@@ -106,7 +107,136 @@ export const Styles = createGlobalStyle`
     .about-block-image svg {
         text-align: center;
     }
+#line {
+  margin-bottom: -60vh;
 
+           @media only screen and (max-width: 890px) {
+               margin-left: 0vw;
+  margin-bottom: 0vh;
+  margin-top: -40%;
+        }
+      
+        @media only screen and (max-width: 414px) {
+              margin-left: 0vw;
+  margin-bottom: 0vh;
+  margin-top: -40%;
+        }
+
+
+
+}
+.rowLine {
+  background: #003140;
+  width: 100vw;
+  margin-left: -10vw;
+  margin-top: -51vh;
+height: 12vh;
+
+              @media only screen and (max-width: 890px) {
+               margin-left: 0vw !important;
+                 width: auto;
+                margin-right: 0;
+
+  margin-top: 0vh;
+        }
+      
+        @media only screen and (max-width: 414px) {
+              margin-left: 0vw !important;
+                width: auto;
+                margin-right: 0;
+
+  margin-top: 0vh;
+        }
+
+
+} 
+
+#codeimg {
+  margin-left: 10vw;
+
+    @media only screen and (max-width: 890px) {
+               margin-left: 0vw;
+  margin-top: 0vh;
+                  width: 100%;
+
+
+        }
+      
+        @media only screen and (max-width: 414px) {
+              margin-left: 0vw;
+  margin-top: 0vh;
+                  width: 100%;
+''
+        }
+
+
+
+}
+
+.cRDcaM {
+    @media only screen and (max-width: 890px) {
+
+            margin-left: 20%;
+        }
+      
+        @media only screen and (max-width: 414px) {
+
+
+            margin-left: 20%;
+
+
+        }
+}
+.cRDcaM a:not(:last-child) {
+
+
+  @media only screen and (max-width: 890px) {
+
+             display: block;
+        }
+      
+        @media only screen and (max-width: 414px) {
+                  display: block;
+
+        }
+}
+.socialLinks {
+  justify-content: center !important;
+  align-items: 'middle';
+  padding-top: 1rem;
+
+  @media only screen and (max-width: 890px) {
+  justify-content: center !important;
+
+             justify-content: 'start';
+  align-items: 'middle';
+        }
+      
+        @media only screen and (max-width: 414px) {
+            justify-content: center !important;
+
+               justify-content: 'start';
+  align-items: 'middle';
+        }
+
+}
+
+body::after { 
+
+
+  content: "";
+ background:url('https://i.ibb.co/jHjjqxG/bg.jpg');
+ background-size: cover;
+  opacity: 0.6;
+    filter: brightness(55%);
+
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
 .footerLinks {
 
 padding-top: 1rem;
@@ -246,24 +376,52 @@ justify-content: 'space-evenly';
 
     }
 
+.sc-himrzO {
 
+
+              @media only screen and (max-width: 890px) {
+                 
+                  display: flex;
+                  flex-flow: column wrap;
+        }
+      
+        @media only screen and (max-width: 414px) {
+                         display: flex;
+                         flex-flow: column wrap; 
+        }
+}
 .cRDcaM { 
 max-width: 240px;
 
 
 
               @media only screen and (max-width: 890px) {
-                 max-width: 50px !important;
+                 max-width: 60% !important  ;
 
         }
       
         @media only screen and (max-width: 414px) {
-           max-width: 50px !important;
+           max-width: 60% !important;
 
         }
 
 
 }
+
+#intro {
+
+
+ 
+
+@media only screen and (max-width: 890px) {
+                  margin-top: 0;
+        }
+      
+        @media only screen and (max-width: 414px) {
+                  margin-top: 0;
+        }
+}
+
     .ant-row {
 
                @media only screen and (max-width: 890px) {

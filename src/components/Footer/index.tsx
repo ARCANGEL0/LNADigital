@@ -40,7 +40,7 @@ const Footer = ({ t }: any) => {
         key={src}
         aria-label={src}
       >
-        <SvgIcon src={src} width="45px" height="45px" />
+        <SvgIcon imgId="" src={src} width="45px" height="45px" />
       </a>
     );
   };
@@ -94,6 +94,7 @@ const Footer = ({ t }: any) => {
               <LanguageSwitchContainer>
                 <LanguageSwitch onClick={() => handleChange("enus")}>
                   <SvgIcon
+                  imgId=""
                     src="us.png"
                     aria-label="homepage"
                     width="30px"
@@ -102,6 +103,7 @@ const Footer = ({ t }: any) => {
                 </LanguageSwitch>
                 <LanguageSwitch onClick={() => handleChange("ptbr")}>
                   <SvgIcon
+                  imgId=""
                     src="brazil.png"
                     aria-label="homepage"
                     width="30px"
@@ -120,9 +122,8 @@ const Footer = ({ t }: any) => {
         
 
           <Row
-            justify="space-between"
-            align="middle"
-            style={{ paddingTop: "1rem", justifyContent:'space-evenly'}}
+          className="socialLinks"
+         
           >
            
             <FooterContainer>

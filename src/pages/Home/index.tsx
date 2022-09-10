@@ -33,43 +33,147 @@ const Home = () => {
       />
 
 
-  {/* 
+   
     <ContentBlock
         type="right"
-        title={IntroContent.title}
-        content={IntroContent.text}
+        title='Titulo'
+        content='Texto'
         button={IntroContent.button}
-        icon="developer.svg"
+        icon="insta.gif"
         id="intro"
+                imgId="insta" 
+                width="50%"
+                height="50%"
+        rowClass=""
+
       />
-   */}
-      <ContentBlock
+   
+   
+  <ContentBlock
         type="left"
+        title='Lorem'
+        content={AboutContent.text}
+          section={AboutContent.section}
+
+        icon="" 
+        id="about"
+                imgId=""
+        rowClass=""
+             width="100%"
+                height="100%"
+
+      />
+ 
+  <ContentBlock
+        type="right"
         title={AboutContent.title}
         content={AboutContent.text}
         section={AboutContent.section}
-        icon="graphs.svg" 
-        id="about"
+        icon="phone.gif" 
+        id=""
+                imgId=""
+        rowClass=""
+             width="100%"
+                height="100%"
+
       />
+
  
+    <ContentBlock
+        type="left"
+        title='Titulo'
+        content='Texto'
+        icon=""
+        id="intro3"
+                imgId=""
+             width="100%"
+                height="100%"
+                        rowClass=""
+
+      />
+
+ 
+  <ContentBlock
+        type="right"
+        title='Sobre nós'
+        content={AboutContent.text}
+  
+        icon="" 
+        id="about"
+                imgId=""
+        rowClass=""
+             width="100%"
+                height="100%"
+
+      />
+
+
+  <ContentBlock
+        type="left"
+        title='Titulo'
+        content='Texto'
+        icon=""
+        id="intro2"
+                imgId=""
+                             width="100%"
+                height="100%"
+        rowClass=""
+
+      />
+   
+
+
+
+    
+
+
+
+<ContentBlock
+        type="right"
+        title='Impulsione já os seus negócios'
+        content='texto chamativo'
+        icon="code.gif"
+        imgId="codeimg"
+        id="code"
+                rowClass=""
+             width="100%"
+                height="100%"
+      />
+
+  <ContentBlock
+        type="right"
+        title=''
+        content=''
+        icon=""
+        id="line"
+        imgId=""
+        rowClass="rowLine"
+ 
+              width="100%"
+                height="100%"
+                     />
+
          <MiddleBlock
         title='Services'
         content='teste'
         button='Get in touch'
         id="services"
+               
+
       />
 
-<ContentBlock
+
+ 
+      <ContentBlock
         type="left"
         title='Impulsione já os seus negócios'
         content='texto chamativo'
-        icon="waving.svg"
-        id="product"
-      />
-
- <GalleryBlock
-       title="Our portfolio"
-       id="gallery"
+        icon=""
+        id="socialsec"
+        imgId=""
+        rowClass="socialRow"
+             width="100%"
+                height="100%"
       />
 
 

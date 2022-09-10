@@ -59,9 +59,10 @@ const Header = ({ t }: any) => {
       <Container>
         <Row justify="space-between">
           <LogoContainer to="/" aria-label="homepage">
-            <SvgIcon src="logo.jpeg"
+            <SvgIcon src="logo.png"
                   width="190px"
                   height="74px"
+                  imgId=""
                   />
           </LogoContainer>
           <NotHidden>
