@@ -16,7 +16,7 @@ export const MiddleBlockSection = styled("section")`
 export const Content = styled("p")`
   padding: 0.75rem 0 0.75rem;
   width: 100vw;
-  margin-left:-15.85vw;
+  margin-left:-14.2vw;
 `;
 
 export const ContentWrapper = styled("div")`

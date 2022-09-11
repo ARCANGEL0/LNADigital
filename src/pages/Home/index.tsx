@@ -15,6 +15,7 @@ const Container = lazy(() => import("../../common/Container"));
 const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
 const ContentBlock = lazy(() => import("../../components/ContentBlock"));
 const GalleryBlock = lazy(() => import("../../components/Gallery"));
+const IntroBlock = lazy(() => import("../../components/IntroBlock"));
 const Home = () => {
 
     const [loading, setLoading] = useState(false)
@@ -34,17 +35,17 @@ const Home = () => {
 
 
    
-    <ContentBlock
+    <IntroBlock
         type="right"
-        title='Titulo'
-        content='Texto'
+        title={IntroContent.title}
+        content={IntroContent.text}
         button={IntroContent.button}
-        icon="insta.gif"
+        icon="phone_marketing.gif"
         id="intro"
-                imgId="insta" 
-                width="50%"
-                height="50%"
-        rowClass=""
+                imgId="introgif" 
+                width="56%"
+                height="56%"
+        rowClass="introRow"
 
       />
    
@@ -55,9 +56,9 @@ const Home = () => {
         content={AboutContent.text}
           section={AboutContent.section}
 
-        icon="" 
+        icon="marketing.gif" 
         id="about"
-                imgId=""
+                imgId="marketing"
         rowClass=""
              width="100%"
                 height="100%"
@@ -69,7 +70,7 @@ const Home = () => {
         title={AboutContent.title}
         content={AboutContent.text}
         section={AboutContent.section}
-        icon="phone.gif" 
+        icon="girlphone.gif" 
         id=""
                 imgId=""
         rowClass=""
@@ -83,9 +84,9 @@ const Home = () => {
         type="left"
         title='Titulo'
         content='Texto'
-        icon=""
+        icon="mark.gif"
         id="intro3"
-                imgId=""
+                imgId="banner2"
              width="100%"
                 height="100%"
                         rowClass=""
@@ -98,9 +99,9 @@ const Home = () => {
         title='Sobre nós'
         content={AboutContent.text}
   
-        icon="" 
+        icon="iso.gif" 
         id="about"
-                imgId=""
+                imgId="aboutimg"
         rowClass=""
              width="100%"
                 height="100%"
@@ -112,9 +113,9 @@ const Home = () => {
         type="left"
         title='Titulo'
         content='Texto'
-        icon=""
+        icon="phone3"
         id="intro2"
-                imgId=""
+                imgId="phone3"
                              width="100%"
                 height="100%"
         rowClass=""
@@ -140,18 +141,6 @@ const Home = () => {
                 height="100%"
       />
 
-  <ContentBlock
-        type="right"
-        title=''
-        content=''
-        icon=""
-        id="line"
-        imgId=""
-        rowClass="rowLine"
- 
-              width="100%"
-                height="100%"
-                     />
 
          <MiddleBlock
         title='Services'
@@ -168,9 +157,9 @@ const Home = () => {
         type="left"
         title='Impulsione já os seus negócios'
         content='texto chamativo'
-        icon=""
+        icon="insta.gif"
         id="socialsec"
-        imgId=""
+        imgId="instaimg"
         rowClass="socialRow"
              width="100%"
                 height="100%"

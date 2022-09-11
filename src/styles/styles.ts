@@ -127,9 +127,9 @@ export const Styles = createGlobalStyle`
 }
 .rowLine {
   background: #003140;
-  width: 100vw;
+  width: 200%;
   margin-left: -10vw;
-  margin-top: -51vh;
+  margin-top: -61vh;
 height: 12vh;
 
               @media only screen and (max-width: 890px) {
@@ -221,8 +221,31 @@ height: 12vh;
 
 }
 
+
+#introgif {
+
+
+    @media only screen and (max-width: 890px) {
+                    margin-left: 23%;
+                    margin-bottom: 15%;
+
+        }
+      
+        @media only screen and (max-width: 414px) {
+                             margin-left: 23%;
+                             margin-bottom: 15%;
+        }
+}
 body::after { 
 
+    @media only screen and (max-width: 890px) {
+                    margin-bottom: -70%
+
+        }
+      
+        @media only screen and (max-width: 414px) {
+                             margin-bottom: -80%
+        }
 
   content: "";
  background:url('https://i.ibb.co/jHjjqxG/bg.jpg');
@@ -235,7 +258,8 @@ body::after {
   bottom: 0;
   right: 0;
   position: absolute;
-  z-index: -1;   
+  z-index: -1;  
+
 }
 .footerLinks {
 
@@ -408,10 +432,13 @@ max-width: 240px;
 
 }
 
+#introRow {
+  margin-right: -25vw;
+}
 #intro {
 
 
- 
+  margin-top: -18vh ;
 
 @media only screen and (max-width: 890px) {
                   margin-top: 0;
