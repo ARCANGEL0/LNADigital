@@ -827,12 +827,12 @@ text-align: center;
         }
       
         @media only screen and (max-width: 414px) {
-          bottom: 55vh;
+          bottom: 53.5vh;
          
         }
 
           @media only screen and (max-width: 412px) {
-          bottom: 55vh;
+          bottom: 53.5vh;
          
         }
 
@@ -852,11 +852,11 @@ text-align: center;
         }
       
         @media only screen and (max-width: 414px) {
-          bottom: 55vh;
+          bottom: 53.5vh;
          
         }
   @media only screen and (max-width: 412px) {
-          bottom: 55vh;
+          bottom: 53.5vh;
          
         }
 
