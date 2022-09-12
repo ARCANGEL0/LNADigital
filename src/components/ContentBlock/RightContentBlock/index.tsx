@@ -42,6 +42,7 @@ const RightBlock = ({
                   button.map((item: any, id: number) => {
                     return (
                       <Button
+                      className=""
                         key={id}
                         color={item.color}
                         fixedWidth={true}
@@ -57,7 +58,7 @@ const RightBlock = ({
          
           {icon === ''  ?   '' : 
            <Col lg={11} md={11} sm={12} xs={24}>
-            <SvgIcon imgId={imgId} src={icon} width={width} height={height} />
+            <SvgIcon  className="" imgId={imgId} src={icon} width={width} height={height} />
                 </Col>
           }
       

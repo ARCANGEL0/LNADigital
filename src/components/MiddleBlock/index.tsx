@@ -15,9 +15,15 @@ interface MiddleBlockProps {
   button: string;
   t: any;
   id: string;
-}
+  servone: any;
+  servtwo: any;
+  servthree: any;
+  servfour: any;
+  servfive: any;
+  servsix: any;
 
-const MiddleBlock = ({ title, content, button,id, t }: MiddleBlockProps) => {
+}
+const MiddleBlock = ({ title, content, button,id, t, servone, servtwo, servthree, servfour,servfive,servsix }: MiddleBlockProps) => {
 
 
   const scrollTo = (id: string) => {
@@ -36,7 +42,7 @@ const MiddleBlock = ({ title, content, button,id, t }: MiddleBlockProps) => {
             <Col lg={24} md={24} sm={24} xs={24}>
               <h6>&nbsp;{t(title)}</h6>
               <Content>
-  <Row gutter={16}>
+  <Row className="servicesRow" gutter={12}>
       <Col span={4}>
         <Card className="serviceCard" cover={ <> 
                     <br/>
@@ -45,10 +51,11 @@ const MiddleBlock = ({ title, content, button,id, t }: MiddleBlockProps) => {
       <ImSearch className="cardIcon"/>
       </>
     } title="Otimização De Sites - SEO " hoverable={true} bordered={true}>
-     Conteudo
+            {t(servone)}
+
         </Card>
       </Col>
-                  <Col span={3}></Col>
+                  <Col span={6}></Col>
       <Col  span={4}>
         <Card  cover={ <> 
                     <br/>
@@ -57,27 +64,17 @@ const MiddleBlock = ({ title, content, button,id, t }: MiddleBlockProps) => {
       </>
     } 
       className="serviceCard" title="Marketing digital" hoverable={true} bordered={true}>
-Conteudo
+                   {t(servtwo)}
 
         </Card>
       </Col>
-                  <Col span={3}></Col>
+                  <Col span={6}></Col>
 
-      <Col  span={4}>
-        <Card  cover={ <> 
-                    <br/>
-
-      <FaLaptopCode className="cardIcon"/>
-      </>
-    } 
-      className="serviceCard" title="Criação de sites" hoverable={true} bordered={true}>
-  Conteudo
-        </Card>
-      </Col>
+     
     </Row>
 <br/>
 <br/>
-      <Row gutter={16}>
+      <Row className="servicesRow" gutter={12}>
       <Col span={4}>
         <Card  cover={ <> 
                     <br/>
@@ -86,10 +83,11 @@ Conteudo
       </>
     } 
       className="serviceCard" title="Redes sociais" hoverable={true} bordered={true}>
-    Conteudo
+              {t(servthree)}
+
         </Card>
       </Col>
-                        <Col span={3}></Col>
+                        <Col span={6}></Col>
 
 
       <Col span={4}>
@@ -100,11 +98,33 @@ Conteudo
       </>
     } 
       className="serviceCard" title="Identidade visual" hoverable={true} bordered={true}>
-          Conteudo
+                    {t(servfour)}
+
         </Card>
       </Col>
-         <Col span={3}></Col>
-      <Col span={4}>
+         <Col span={6}></Col>
+     
+    </Row>
+
+    <Row className="middleRow" gutter={12}>         <Col span={6}></Col>
+ </Row>
+  <Row className="servicesRow" gutter={12}>
+
+  <Col  span={4}>
+        <Card  cover={ <> 
+                    <br/>
+
+      <FaLaptopCode className="cardIcon"/>
+      </>
+    } 
+      className="serviceCard" title="Criação de sites" hoverable={true} bordered={true}>
+             {t(servfive)}
+
+        </Card>
+      </Col>
+         <Col span={6}></Col>
+
+       <Col span={4}>
         <Card  cover={ <> 
                     <br/>
 
@@ -112,16 +132,19 @@ Conteudo
       </>
     } 
       className="serviceCard" title="Gestão de tráfego" hoverable={true} bordered={true}>
-     Conteudo
-        </Card>
+
+                  {t(servsix)}
+
+         </Card>
       </Col>
     </Row>
 
-
-
               </Content>
               {button && (
-                <Button name="submit" onClick={() => scrollTo("contact")}>
+                <Button 
+                      className="servBtn"
+
+                name="submit" onClick={() => scrollTo("contact")}>
                   {t(button)}
                 </Button>
               )}

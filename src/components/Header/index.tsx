@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Row, Col, Drawer } from "antd";
+import i18n from "i18next";
+
 import { withTranslation } from "react-i18next";
 import Container from "../../common/Container";
 import { SvgIcon } from "../../common/SvgIcon";
@@ -14,6 +16,8 @@ import {
   Label,
   Outline,
   Span,
+    LanguageSwitch,
+  LanguageSwitchContainer,
 } from "./styles";
 
 const Header = ({ t }: any) => {
@@ -28,6 +32,10 @@ const Header = ({ t }: any) => {
   };
 
   const MenuItem = () => {
+     const handleChange = (language: string) => {
+    i18n.changeLanguage(language);
+  };
+
     const scrollTo = (id: string) => {
       const element = document.getElementById(id) as HTMLDivElement;
       element.scrollIntoView({
@@ -50,6 +58,46 @@ const Header = ({ t }: any) => {
           <CustomNavLinkSmall onClick={() => scrollTo("contact")}>
           <Span>{t("Contact")}</Span>
         </CustomNavLinkSmall>
+
+            <CustomNavLinkSmall>
+          <Span>
+            
+ <LanguageSwitchContainer>
+                <LanguageSwitch onClick={() => handleChange("enus")}>
+                  <SvgIcon
+                   className=""
+                  imgId="headerUS"
+                    src="us.png"
+                    aria-label="homepage"
+                    width="20px"
+                    height="20px"
+                  />
+                </LanguageSwitch>
+                <LanguageSwitch onClick={() => handleChange("ptbr")}>
+                  <SvgIcon
+                   className=""
+                  imgId="headerBR"
+                    src="brazil.png"
+                    aria-label="homepage"
+                    width="22px"
+                    height="22px"
+                  />
+                </LanguageSwitch>
+
+                   <LanguageSwitch onClick={() => handleChange("eses")}>
+                  <SvgIcon
+                   className=""
+                  imgId="headerES"
+                    src="spanish.png"
+                    aria-label="homepage"
+                    width="22px"
+                    height="22px"
+                  />
+                </LanguageSwitch>
+              </LanguageSwitchContainer>
+
+          </Span>
+        </CustomNavLinkSmall>
       </>
     );
   };
@@ -59,9 +107,12 @@ const Header = ({ t }: any) => {
       <Container>
         <Row justify="space-between">
           <LogoContainer to="/" aria-label="homepage">
-            <SvgIcon src="logo.png"
-                  width="190px"
-                  height="74px"
+            <SvgIcon
+
+             className=""
+              src="logo.png"
+                  width="240px"
+                  height="94px"
                   imgId=""
                   />
           </LogoContainer>

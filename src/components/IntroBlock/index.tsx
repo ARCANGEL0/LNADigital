@@ -37,7 +37,7 @@ const IntroBlock = ({
 
              <Col lg={11} md={11} sm={12} xs={24}>
           {icon === ''  ?   '' : 
-            <SvgIcon imgId={imgId} src={icon} width={width} height={height} />
+            <SvgIcon  className="" imgId={imgId} src={icon} width={width} height={height} />
           }
           </Col>
 
@@ -52,6 +52,8 @@ const IntroBlock = ({
                   button.map((item: any, id: number) => {
                     return (
                       <Button
+                       className="introBtn"
+
                         key={id}
                         color={item.color}
                         fixedWidth={true}

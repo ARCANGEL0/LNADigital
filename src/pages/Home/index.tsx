@@ -1,14 +1,14 @@
 import { lazy, useState } from "react";
 
 import IntroContent from "../../content/IntroContent.json";
-import MiddleBlockContent from "../../content/MiddleBlockContent.json";
 import AboutContent from "../../content/AboutContent.json";
-import MissionContent from "../../content/MissionContent.json";
-import ProductContent from "../../content/ProductContent.json";
+import EndingBlock from "../../content/EndingBlock.json";
 import ContactContent from "../../content/ContactContent.json";
+import ServicesContent from "../../content/ServicesContent.json";
+
 import { CircleSpinnerOverlay } from 'react-spinner-overlay'
 
-
+ 
 const Contact = lazy(() => import("../../components/ContactForm"));
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
 const Container = lazy(() => import("../../common/Container"));
@@ -40,11 +40,11 @@ const Home = () => {
         title={IntroContent.title}
         content={IntroContent.text}
         button={IntroContent.button}
-        icon="phone_marketing.gif"
+        icon="bannerintro.gif"
         id="intro"
                 imgId="introgif" 
-                width="56%"
-                height="56%"
+                width=""
+                height=""
         rowClass="introRow"
 
       />
@@ -52,14 +52,14 @@ const Home = () => {
    
   <ContentBlock
         type="left"
-        title='Lorem'
-        content={AboutContent.text}
-          section={AboutContent.section}
+        title={IntroContent.titletwo}
+        content={IntroContent.texttwo}
+          section={IntroContent.section}
 
         icon="marketing.gif" 
         id="about"
                 imgId="marketing"
-        rowClass=""
+        rowClass="marketingRow"
              width="100%"
                 height="100%"
 
@@ -67,13 +67,12 @@ const Home = () => {
  
   <ContentBlock
         type="right"
-        title={AboutContent.title}
-        content={AboutContent.text}
-        section={AboutContent.section}
+        title={IntroContent.titlethree}
+        content={IntroContent.textthree}
         icon="girlphone.gif" 
         id=""
                 imgId=""
-        rowClass=""
+        rowClass="phonegirlRow"
              width="100%"
                 height="100%"
 
@@ -82,43 +81,45 @@ const Home = () => {
  
     <ContentBlock
         type="left"
-        title='Titulo'
-        content='Texto'
-        icon="mark.gif"
+        title={IntroContent.titlefour}
+        content={IntroContent.textfour}
+        icon="phonemarket.gif"
         id="intro3"
                 imgId="banner2"
-             width="100%"
-                height="100%"
-                        rowClass=""
+             width="75%"
+                height="75%"
+                        rowClass="seoRow"
 
       />
 
  
   <ContentBlock
         type="right"
-        title='Sobre nós'
+        title={AboutContent.title}
         content={AboutContent.text}
   
         icon="iso.gif" 
         id="about"
                 imgId="aboutimg"
-        rowClass=""
+        rowClass="aboutRow"
              width="100%"
                 height="100%"
 
       />
 
 
+
+
   <ContentBlock
         type="left"
-        title='Titulo'
-        content='Texto'
-        icon="phone3"
+             title={AboutContent.titletwo}
+        content={AboutContent.texttwo}
+        icon="mark.gif"
         id="intro2"
                 imgId="phone3"
                              width="100%"
                 height="100%"
-        rowClass=""
+        rowClass="about2Row"
 
       />
    
@@ -131,22 +132,55 @@ const Home = () => {
 
 <ContentBlock
         type="right"
-        title='Impulsione já os seus negócios'
-        content='texto chamativo'
+           title={AboutContent.titlethree}
+        content={AboutContent.textthree}
         icon="code.gif"
         imgId="codeimg"
         id="code"
-                rowClass=""
+                rowClass="codeRow"
              width="100%"
                 height="100%"
       />
 
 
+  <ContentBlock
+        type="right"
+        title=''
+        content=''
+  
+        icon="" 
+        id="line"
+                imgId=""
+        rowClass="rowLine"
+             width="100%"
+                height="100%"
+
+      />
+
          <MiddleBlock
         title='Services'
-        content='teste'
+        content=''
+        servone={ServicesContent.one}
+        servtwo={ServicesContent.two}
+
+        servthree={ServicesContent.three}
+
+        servfour={ServicesContent.four}
+
+        servfive={ServicesContent.five}
+
+        servsix={ServicesContent.six}
+
         button='Get in touch'
         id="services"
+               
+
+      />
+
+
+         <GalleryBlock
+        title='Our portfolio'
+        id="gallery"
                
 
       />
@@ -155,14 +189,14 @@ const Home = () => {
  
       <ContentBlock
         type="left"
-        title='Impulsione já os seus negócios'
-        content='texto chamativo'
+        title={EndingBlock.title}
+        content={EndingBlock.text}
         icon="insta.gif"
         id="socialsec"
         imgId="instaimg"
         rowClass="socialRow"
-             width="100%"
-                height="100%"
+             width="65%"
+                height="65%"
       />
 
 

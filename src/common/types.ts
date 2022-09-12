@@ -8,6 +8,7 @@ export interface ButtonProps {
   fixedWidth?: boolean;
   name?: string;
   children: React.ReactNode;
+  className: string;
   onClick?: () => void;
 }
 
@@ -16,6 +17,7 @@ export interface SvgIconProps {
   width: string;
   height: string;
   imgId: string;
+  className: string;
 }
 
 export interface InputProps {

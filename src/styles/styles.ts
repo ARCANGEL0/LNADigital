@@ -84,6 +84,8 @@ export const Styles = createGlobalStyle`
         color: #212738;
         font-size: 21px;        
         line-height: 1.41;
+                          text-align: justify;
+
     }
 
     h1 {
@@ -125,11 +127,14 @@ export const Styles = createGlobalStyle`
 
 
 }
+.phonegirlRow h6 {
+  font-size: 2.45rem;
+}
 .rowLine {
   background: #003140;
   width: 200%;
   margin-left: -10vw;
-  margin-top: -61vh;
+  margin-top: -56vh;
 height: 12vh;
 
               @media only screen and (max-width: 890px) {
@@ -151,9 +156,26 @@ height: 12vh;
 
 } 
 
+
+.qJjLP {
+
+ @media only screen and (max-width: 890px) {
+
+
+            align-self: center;
+
+
+        }
+      
+        @media only screen and (max-width: 414px) {
+            align-self: center;
+
+        }
+}
+
 #codeimg {
   margin-left: 10vw;
-
+  margin-top: 55vh;
     @media only screen and (max-width: 890px) {
                margin-left: 0vw;
   margin-top: 0vh;
@@ -166,7 +188,7 @@ height: 12vh;
               margin-left: 0vw;
   margin-top: 0vh;
                   width: 100%;
-''
+
         }
 
 
@@ -221,19 +243,281 @@ height: 12vh;
 
 }
 
+.iconCol {
 
-#introgif {
-
-
-    @media only screen and (max-width: 890px) {
-                    margin-left: 23%;
-                    margin-bottom: 15%;
+  @media only screen and (max-width: 890px) {
+          justify-content: center;
+                  text-align: justify;
+          font-size: 1.5rem !important;
 
         }
       
         @media only screen and (max-width: 414px) {
-                             margin-left: 23%;
-                             margin-bottom: 15%;
+
+          justify-content: center;
+                  text-align: justify;
+          font-size: 1.5rem !important;
+        }
+
+
+
+
+}
+
+
+.codeRow h6 {
+  font-size: 2.5rem;
+}
+
+.about2Row,
+.codeRow,
+.marketingRow,
+.phonegirlRow {
+
+    @media only screen and (max-width: 890px) {
+        
+         text-align: center !important;
+        }
+      
+        @media only screen and (max-width: 414px) {
+        text-align: center !important;
+        }
+
+}
+#banner2{
+    @media only screen and (max-width: 890px) {
+        
+        margin-left: 15vw;
+
+        }
+      
+        @media only screen and (max-width: 414px) {
+        margin-left: 12vw;
+        }
+
+
+}
+
+.iconTitleCol {
+  @media only screen and (max-width: 890px) {
+        
+         text-align: center !important;
+        }
+      
+        @media only screen and (max-width: 414px) {
+        text-align: center !important;
+        }
+
+
+}
+.aboutRow h6,
+.seoRow h6,
+.seoRow,
+#intro3,
+.aboutRow,
+.socialRow
+
+ {
+    @media only screen and (max-width: 890px) {
+        
+         text-align: center !important;
+        }
+      
+        @media only screen and (max-width: 414px) {
+        text-align: center !important;
+        }
+}
+.codeRow,
+.about2Row,
+.aboutRow,
+.seoRow,
+.phonegirlRow,
+.marketingRow,
+.socialRow { 
+
+    @media only screen and (max-width: 890px) {
+        
+         text-align: justify;
+        }
+      
+        @media only screen and (max-width: 414px) {
+        text-align: justify;
+        }
+
+
+}
+
+.socialRow h6 { 
+
+    @media only screen and (max-width: 890px) {
+        
+        margin-left: 0vw;
+                  text-align: justify;
+        }
+      
+        @media only screen and (max-width: 414px) {
+        margin-left: 0vw;
+                  text-align: justify;
+        }
+
+
+}
+#instaimg {
+    @media only screen and (max-width: 890px) {
+        
+        margin-bottom: -10vh;
+        }
+      
+        @media only screen and (max-width: 414px) {
+        margin-bottom: -10vh;
+       
+        }
+
+
+}
+ 
+ #marketing{
+    @media only screen and (max-width: 414px) {
+        
+        margin-top: 4.5vh;
+        }
+ }
+.iconTitleCol {
+
+      @media only screen and (max-width: 890px) {
+          margin-left: 22vw;
+          width: 50vw;
+       
+
+        }
+      
+        @media only screen and (max-width: 414px) {
+          margin-left: 22vw;
+          width: 50vw;
+
+        }
+}
+
+
+ .iconImgCol { 
+    @media only screen and (max-width: 890px) {
+          margin-left: 41.5vw;
+       
+
+        }
+      
+        @media only screen and (max-width: 414px) {
+          margin-left: 41.5vw;
+
+        }
+
+ }
+ .marketingRow p {
+   font-size: 1rem;
+                     text-align: justify;
+
+ }
+
+ .iconContent { 
+   font-size: 0.8rem !important;
+
+
+  @media only screen and (max-width: 890px) {
+             width: 90vw;
+          font-size: 1rem !important;
+
+        }
+      
+        @media only screen and (max-width: 414px) {
+             width: 90vw;
+        
+          font-size: 1rem !important;
+        }
+
+ }
+
+.introBtn {
+
+  @media only screen and (max-width: 890px) {
+              margin-left: 23.5vw !important;
+
+        }
+      
+        @media only screen and (max-width: 414px) {
+                   margin-left: 23.5vw !important;
+
+        }
+
+}
+.dWLTLY {
+    @media only screen and (max-width: 890px) {
+             align-items:center;
+             text-align:center;
+             justify-content: center;
+        }
+      
+        @media only screen and (max-width: 414px) {
+             align-items:center;
+             text-align:center;
+             justify-content: center;
+        }
+}
+.socialCol{ 
+
+  @media only screen and (max-width: 890px) {
+             align-items:center;
+             text-align:center;
+             justify-content: center;
+        }
+      
+        @media only screen and (max-width: 414px) {
+             align-items:center;
+             text-align:center;
+             justify-content: center;
+        }
+
+}
+.footerRow {
+   @media only screen and (max-width: 890px) {
+             align-items:center;
+        }
+      
+        @media only screen and (max-width: 414px) {
+             align-items:center;
+
+        }
+}
+.contactSubmit {
+    @media only screen and (max-width: 890px) {
+              margin-right: 3vw;
+
+        }
+      
+        @media only screen and (max-width: 414px) {
+                   margin-right: 3vw;
+
+        }
+
+
+}
+#introgif {
+margin-bottom: 5vh;
+width: 76%;
+height: 76%;
+
+    @media only screen and (max-width: 890px) {
+                    margin-left: 24.5%;
+                    margin-top: 10vh;
+                    width: 60%;
+                    height: 60%;
+        }
+      
+        @media only screen and (max-width: 414px) {
+                             margin-left: 24.5%;
+                             margin-top: 10vh;
+        
+                             width: 60%;
+                      height: 60%;
         }
 }
 body::after { 
@@ -355,32 +639,54 @@ justify-content: 'space-evenly';
     .cardIcon { 
     font-size: 370%;
     }
+
+    .middleRow {
+      margin-top: 10vh;
+             @media only screen and (max-width: 890px) {
+          margin-top: 0 !important;
+        }
+      
+        @media only screen and (max-width: 414px) {
+          margin-top: 0 !important;
+        }
+    }
     .serviceCard { 
             border: 1px solid #c2c2c2;
-            box-shadow
+            width: 30vw;
+            height: 60vh;
 
 
                      @media only screen and (max-width: 890px) {
                   width: 60vw;
+                  height: 85vh;
                   margin-left: 26vw;
                   margin-bottom: 2.5vh;
         }
       
         @media only screen and (max-width: 414px) {
+                  height: 64vh;
+
                   width: 60vw;
                   margin-left: 26vw;
                   margin-bottom: 2.5vh;
 
         }
 
+   @media only screen and (max-width: 380px) {
+                  height: 86vh;
 
+                  width: 60vw;
+                  margin-left: 26vw;
+                  margin-bottom: 2.5vh;
+
+        }
     }
 
     .ant-card-head{ 
 
         background: rgb(187, 0, 0);
-        width: 18.5vw;
-        margin-left: -1.5vw;
+        width: 33.1vw;
+        margin-left: -1.6vw;
         height: 10px;
         margin-top: 1.5vh;
 
@@ -432,20 +738,58 @@ max-width: 240px;
 
 }
 
+.servicesRow { 
+margin-left: -8vw 
+
+}
+
+#footerUS,
+#headerUS{ 
+
+margin-right: 5px;
+
+     @media only screen and (max-width: 890px) {
+                 margin-right: 18px;
+
+        }
+      
+        @media only screen and (max-width: 414px) {
+           margin-right: 18px;
+
+        }
+
+
+}
+#footerBR,
+#headerBR { 
+margin-right: 5px;
+
+     @media only screen and (max-width: 890px) {
+                 margin-right: 18px;
+
+        }
+      
+        @media only screen and (max-width: 414px) {
+           margin-right: 18px;
+
+        }
+
+}
 #introRow {
   margin-right: -25vw;
 }
 #intro {
+                  text-align: justify;
 
 
-  margin-top: -18vh ;
+  padding-top: 8vh ;
 
 @media only screen and (max-width: 890px) {
-                  margin-top: 0;
+                  margin-top: -28px;
         }
       
         @media only screen and (max-width: 414px) {
-                  margin-top: 0;
+                  margin-top: -28px;
         }
 }
 
@@ -466,6 +810,7 @@ max-width: 240px;
 padding: 12px 0;
 font-weight: 800;
 color: #fff;
+text-align: center;
 }
 .ant-card-head::before {
   content: "";
@@ -473,16 +818,61 @@ color: #fff;
   border-color: rgb(95,0,0) rgb(95,0,0) transparent transparent;
   position: absolute;
   left: -20px;
-  bottom: 125px;
+  bottom: 47vh;
+
+
+
+         @media only screen and (max-width: 890px) {
+          bottom: 73.25vh;
+        }
+      
+        @media only screen and (max-width: 414px) {
+          bottom: 55vh;
+         
+        }
+
+          @media only screen and (max-width: 412px) {
+          bottom: 55vh;
+         
+        }
+
+
+          @media only screen and (max-width: 380px) {
+          bottom: 74.25vh;
+         
+        }
+
+
 }
 .ant-card-head::after{
+
+
+         @media only screen and (max-width: 890px) {
+          bottom: 73.25vh;
+        }
+      
+        @media only screen and (max-width: 414px) {
+          bottom: 55vh;
+         
+        }
+  @media only screen and (max-width: 412px) {
+          bottom: 55vh;
+         
+        }
+
+
+          @media only screen and (max-width: 380px) {
+          bottom: 74.25vh;
+         
+        }
+
     right: -20px !important;
       content: "";
   border: 10px solid;
   border-color: rgb(95,0,0) rgb(95,0,0) transparent transparent;
   position: absolute;
 
-  bottom: 125px;
+  bottom: 47vh;
 }
 
 .ant-card-head::after {
@@ -491,3 +881,5 @@ color: #fff;
   border-color: rgb(95,0,0) transparent transparent rgb(95,0,0);
 }
 `;
+
+

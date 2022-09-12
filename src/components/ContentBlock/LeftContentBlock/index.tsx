@@ -18,8 +18,9 @@ const LeftContentBlock = ({
   content,
   section,
   t,
+   width,
+  height,
     imgId,
-
 rowClass,
 
   id,
@@ -30,7 +31,7 @@ rowClass,
         <Row justify="space-between" align="middle" className={rowClass} >
          <Col lg={11} md={11} sm={12} xs={24}>
           {icon === ''  ?   '' : 
-            <SvgIcon imgId={imgId} src={icon} width="100%" height="100%" />
+            <SvgIcon   className="" imgId={imgId} src={icon} width={width} height={height} />
           }
           </Col>
           <Col lg={11} md={11} sm={11} xs={24}>
@@ -42,10 +43,10 @@ rowClass,
                   {typeof section === "object" &&
                     section.map((item: any, id: number) => {
                       return (
-                        <Col key={id} span={11}>
-                          <SvgIcon imgId="" src={item.icon} width="60px" height="60px" />
-                          <MinTitle>{t(item.title)}</MinTitle>
-                          <MinPara>{t(item.content)}</MinPara>
+                        <Col className="iconCol" key={id} span={11}>
+                          <SvgIcon className="iconImgCol" imgId="" src={item.icon} width="60px" height="60px" />
+                          <MinTitle className="iconTitleCol" >{t(item.title)}</MinTitle>
+                          <MinPara className="iconContent">{t(item.content)}</MinPara>
                         </Col>
                       );
                     })}

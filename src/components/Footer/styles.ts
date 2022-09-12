@@ -161,10 +161,35 @@ export const LanguageSwitch = styled("div")<any>`
     -ms-transform: scale(1.1);
     transform: scale(1.1);
   }
+
+    @media only screen and (max-width: 890px) {
+             align-items:center;
+             text-align:center;
+             justify-content: center;
+        }
+      
+        @media only screen and (max-width: 414px) {
+             align-items:center;
+             text-align:center;
+             justify-content: center;
+
+        }
 `;
 
 export const LanguageSwitchContainer = styled("div")`
   display: flex;
   justify-content: space-between;
   width: 85px;
+
+    @media only screen and (max-width: 890px) {
+             align-items:center;
+             text-align:center;
+        }
+      
+        @media only screen and (max-width: 414px) {
+             align-items:center;
+             text-align:center;
+
+        }
+
 `;

@@ -4,7 +4,7 @@ import XHR from "i18next-xhr-backend";
 
 import translationEnus from "./locales/enus/translation.json";
 import translationPtbr from "./locales/ptbr/translation.json";
-
+import translationEses from './locales/eses/translation.json';
 i18n
   .use(XHR)
   .use(LanguageDetector)
@@ -25,6 +25,9 @@ i18n
       ptbr: {
         translations: translationPtbr,
       },
+      eses: {
+        translations: translationEses
+      }
     },
     ns: ["translations"],
     defaultNS: "translations",

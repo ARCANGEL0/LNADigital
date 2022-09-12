@@ -15,7 +15,7 @@ import { ContactContainer, FormGroup, Span, ButtonContainer } from "./styles";
 
 const Contact = ({ title, content, id, t, carregar }: ContactProps, ) => {
 
-
+ 
    const openNotificationWithIcon = (tipo : any) => {
 
     if(tipo == 'success') {
@@ -67,7 +67,7 @@ const Contact = ({ title, content, id, t, carregar }: ContactProps, ) => {
               <Col span={24}>
                 <Input
                   type="text"
-                  name="name"
+                  name="Name"
                   placeholder="Your Name"
                   value={values.name || ""}
                   onChange={handleChange}
@@ -78,7 +78,7 @@ const Contact = ({ title, content, id, t, carregar }: ContactProps, ) => {
               <Col span={24}>
                 <Input
                   type="text"
-                  name="email"
+                  name="Email"
                   placeholder="Your Email"
                   value={values.email || ""}
                   onChange={handleChange}
@@ -89,13 +89,13 @@ const Contact = ({ title, content, id, t, carregar }: ContactProps, ) => {
                 <TextArea
                   placeholder="Your Message"
                   value={values.message || ""}
-                  name="message"
+                  name="Message"
                   onChange={handleChange}
                 />
                 <ValidationType type="message" />
               </Col>
               <ButtonContainer>
-                <Button name="submit">{t("Submit")}</Button>
+                <Button className="contactSubmit" name="submit">{t("Submit")}</Button>
               </ButtonContainer>
             </FormGroup>
           </Slide>

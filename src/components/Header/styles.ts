@@ -107,3 +107,41 @@ export const Span = styled("span")`
     text-shadow: #bc3a3a 0 2.5px 3.5px;;
   }
 `;
+export const LanguageSwitch = styled("div")<any>`
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+
+  &:hover,
+  &:active,
+  &:focus {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+ 
+`;
+
+export const LanguageSwitchContainer = styled("div")`
+  display: flex;
+  justify-content: space-between;
+  width: 85px;
+
+   @media only screen and (max-width: 768px) {
+  align-self: center;
+  justify-content:center;
+  }
+
+              @media only screen and (max-width: 890px) {
+  align-self: center;
+  justify-content:center;
+
+        }
+      
+        @media only screen and (max-width: 414px) {
+  align-self: center;
+  justify-content:center;
+
+        }
+
+`;

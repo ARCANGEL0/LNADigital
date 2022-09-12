@@ -4,7 +4,7 @@ import { SvgIcon } from "../../common/SvgIcon";
 import Container from "../../common/Container";
 
 import i18n from "i18next";
-import {
+import { 
   FooterSection,
   Title,
   NavLink,
@@ -40,7 +40,7 @@ const Footer = ({ t }: any) => {
         key={src}
         aria-label={src}
       >
-        <SvgIcon imgId="" src={src} width="45px" height="45px" />
+        <SvgIcon  className="" imgId="" src={src} width="45px" height="45px" />
       </a>
     );
   };
@@ -50,6 +50,9 @@ const Footer = ({ t }: any) => {
       <FooterSection>
         <Container>
           <Row justify="space-between">
+          
+          </Row>
+          <Row className="footerRow" justify="space-between">
             <Col lg={10} md={10} sm={12} xs={12}>
               <Language>{t("Contact")}</Language>
               <Large to="/">{t("Tell us everything")}</Large>
@@ -60,41 +63,45 @@ const Footer = ({ t }: any) => {
                 <Chat>{t(`Let's Chat`)}</Chat>
               </a>
             </Col>
-          
-            <Col lg={6} md={6} sm={12} xs={12}>
-              <Empty />
-        
-            </Col>
-          </Row>
-          <Row justify="space-between">
-            <Col lg={10} md={10} sm={12} xs={12}>
-              <Empty />
-              <Language>{t("Address")}</Language>
-              <Para>R. Manoel Araújo, 274</Para>
-              <Para>11432-390 - Santo Antônio</Para>
-              <Para>Guarujá/SP - Brazil</Para>
-            </Col>
-            <Col lg={8} md={8} sm={12} xs={12}>
-              <Title>{t("Company")}</Title>
-              <Large left="true" to="/">
-                {t("About")}
-              </Large>
-              <Large left="true" to="/">
-                {t("Blog")}
-              </Large>
-              <Large left="true" to="/">
-                {t("Press")}
-              </Large>
-              <Large left="true" to="/">
-                {t("Careers & Culture")}
-              </Large>
+            <Col className="socialCol" lg={8} md={8} sm={12} xs={12}>
+              <Title>{t("Social Links")}</Title>
+                             &nbsp;&nbsp;
+
+               <SocialLink
+                href="https://www.facebook.com/profile.php?id=100082874455658"
+                src="face.svg"
+              />
+               &nbsp;&nbsp;&nbsp;
+
+              <SocialLink
+                href="https://api.whatsapp.com/send?phone=5513988032388"
+                src="whats.svg"
+              />
+                            
+                 <br/>
+ &nbsp;&nbsp;
+
+              <SocialLink
+                href="https://instagram.com/lna_assessoriadigital"
+                src="insta.svg"
+              />
+
+               &nbsp;&nbsp;&nbsp;
+
+              <SocialLink
+                href="mailto:lnaassessoriadigital@gmail.com"
+                src="mail.png"
+              />
+       
+
             </Col>
             <Col lg={6} md={6} sm={12} xs={12}>
               <Label htmlFor="select-lang">{t("Language")}</Label>
               <LanguageSwitchContainer>
                 <LanguageSwitch onClick={() => handleChange("enus")}>
                   <SvgIcon
-                  imgId=""
+                   className=""
+                  imgId="footerUS"
                     src="us.png"
                     aria-label="homepage"
                     width="30px"
@@ -103,8 +110,19 @@ const Footer = ({ t }: any) => {
                 </LanguageSwitch>
                 <LanguageSwitch onClick={() => handleChange("ptbr")}>
                   <SvgIcon
-                  imgId=""
+                   className=""
+                  imgId="footerBR"
                     src="brazil.png"
+                    aria-label="homepage"
+                    width="30px"
+                    height="30px"
+                  />
+                </LanguageSwitch>
+                 <LanguageSwitch onClick={() => handleChange("eses")}>
+                  <SvgIcon
+                   className=""
+                  imgId="footerES"
+                    src="spanish.png"
                     aria-label="homepage"
                     width="30px"
                     height="30px"
@@ -121,40 +139,14 @@ const Footer = ({ t }: any) => {
         border={true}>
         
 
-          <Row
-          className="socialLinks"
-         
-          >
-           
-            <FooterContainer>
-              <SocialLink
-                href="https://www.facebook.com/profile.php?id=100082874455658"
-                src="face.svg"
-              />
-              <SocialLink
-                href="https://api.whatsapp.com/send?phone=5513988032388"
-                src="whats.svg"
-              />
-
-
-              <SocialLink
-                href="ttps://instagram.com/lna_assessoriadigital"
-                src="insta.svg"
-              />
-              <SocialLink
-                href="mailto:lnaassessoriadigital@gmail.com"
-                src="mail.png"
-              />
-       
-            </FooterContainer>
-          </Row>
-          <Row       
+      <br/>
+          <Row className="footerRow"       
    justify="space-between"
             align="middle"
                 style={{ paddingTop:'5px', textAlign:'center',justifyContent:'space-evenly' }}
 >
-             <strong> L.N.A Assessoria Digital @ <i style={{color:'rgb(30, 10, 10)'}}> {new Date().getFullYear()} </i> <br/>
-               Todos os direitos reservados</strong>
+             <strong>{t('LNA Digital Agency')} @ <i style={{color:'rgb(30, 10, 10)'}}> {new Date().getFullYear()} </i> <br/>
+               {t('All rights reserved')}</strong>
           </Row>
         </Container>
       </Extra>
