@@ -685,7 +685,7 @@ justify-content: 'space-evenly';
     .ant-card-head{ 
 
         background: rgb(187, 0, 0);
-        width: 33.1vw;
+        width: 32.9vw;
         margin-left: -1.6vw;
         height: 10px;
         margin-top: 1.5vh;
@@ -818,27 +818,26 @@ text-align: center;
   border-color: rgb(95,0,0) rgb(95,0,0) transparent transparent;
   position: absolute;
   left: -20px;
-  bottom: 47.5vh;
+  bottom: 48vh;
 
 
 
          @media only screen and (max-width: 890px) {
-          bottom: 73.25vh;
+display: none;         
         }
       
         @media only screen and (max-width: 460px) {
-          bottom: 75vh;
-         
+display: none;         
         }
 
           @media only screen and (max-width: 400px) {
-          bottom: 54vh;
+display: none;         
          
         }
 
 
           @media only screen and (max-width: 380px) {
-          bottom: 74.25vh;
+display: none;         
          
         }
 
@@ -850,8 +849,16 @@ text-align: center;
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
-/* Styles */
+      display: none;
 }
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (max-width : 500px) {
+      display: none;
+}
+
 
 /* Smartphones (landscape) ----------- */
 @media only screen 
@@ -862,14 +869,14 @@ and (min-width : 321px) {
 /* Smartphones (portrait) ----------- */
 @media only screen 
 and (max-width : 320px) {
-/* Styles */
+      display: none;
 }
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
-/* Styles */
+      display: none;
 }
 
 /* iPads (landscape) ----------- */
@@ -877,7 +884,7 @@ and (max-device-width : 1024px) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : landscape) {
-/* Styles */
+      display: none;
 }
 
 /* iPads (portrait) ----------- */
@@ -885,7 +892,7 @@ and (orientation : landscape) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : portrait) {
-/* Styles */
+      display: none;
 }
 
 /* Desktops and laptops ----------- */
@@ -909,21 +916,21 @@ only screen and (min-device-pixel-ratio : 1.5) {
 
 
          @media only screen and (max-width: 890px) {
-          bottom: 73.25vh;
+      display: none;
         }
       
               @media only screen and (max-width: 400px) {
-          bottom: 54vh;
+      display: none;
          
         }
   @media only screen and (max-width: 460px) {
-          bottom: 75vh;
+      display: none;
          
         }
 
 
           @media only screen and (max-width: 380px) {
-          bottom: 74.25vh;
+      display: none;
          
         }
 
@@ -933,7 +940,7 @@ only screen and (min-device-pixel-ratio : 1.5) {
   border-color: rgb(95,0,0) rgb(95,0,0) transparent transparent;
   position: absolute;
 
-  bottom: 47.5vh;
+  bottom: 48vh;
 }
 
 .ant-card-head::after {

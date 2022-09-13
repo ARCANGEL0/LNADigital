@@ -50,7 +50,7 @@ const MiddleBlock = ({ title, content, button,id, t, servone, servtwo, servthree
 
       <ImSearch className="cardIcon"/>
       </>
-    } title="Otimização De Sites - SEO " hoverable={true} bordered={true}>
+    } title={t("Website Optimization - SEO")} hoverable={true} bordered={true}>
             {t(servone)}
 
         </Card>
@@ -63,7 +63,7 @@ const MiddleBlock = ({ title, content, button,id, t, servone, servtwo, servthree
       <FaRegLightbulb className="cardIcon"/>
       </>
     } 
-      className="serviceCard" title="Marketing digital" hoverable={true} bordered={true}>
+      className="serviceCard" title={t("Digital marketing")} hoverable={true} bordered={true}>
                    {t(servtwo)}
 
         </Card>
@@ -82,7 +82,7 @@ const MiddleBlock = ({ title, content, button,id, t, servone, servtwo, servthree
       <AiTwotoneNotification className="cardIcon"/>
       </>
     } 
-      className="serviceCard" title="Redes sociais" hoverable={true} bordered={true}>
+      className="serviceCard" title={t("Social networks")} hoverable={true} bordered={true}>
               {t(servthree)}
 
         </Card>
@@ -97,7 +97,7 @@ const MiddleBlock = ({ title, content, button,id, t, servone, servtwo, servthree
       <GiStarsStack className="cardIcon"/>
       </>
     } 
-      className="serviceCard" title="Identidade visual" hoverable={true} bordered={true}>
+      className="serviceCard" title={t("Visual identity")} hoverable={true} bordered={true}>
                     {t(servfour)}
 
         </Card>
@@ -117,7 +117,7 @@ const MiddleBlock = ({ title, content, button,id, t, servone, servtwo, servthree
       <FaLaptopCode className="cardIcon"/>
       </>
     } 
-      className="serviceCard" title="Criação de sites" hoverable={true} bordered={true}>
+      className="serviceCard" title={t("Website development")} hoverable={true} bordered={true}>
              {t(servfive)}
 
         </Card>
@@ -131,7 +131,7 @@ const MiddleBlock = ({ title, content, button,id, t, servone, servtwo, servthree
       <IoRocket className="cardIcon"/>
       </>
     } 
-      className="serviceCard" title="Gestão de tráfego" hoverable={true} bordered={true}>
+      className="serviceCard" title={t("Traffic Management")} hoverable={true} bordered={true}>
 
                   {t(servsix)}
 
