@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Row, Col, Drawer } from "antd";
 import i18n from "i18next";
-
+import {useHistory} from 'react-router-dom';
 import { withTranslation } from "react-i18next";
 import Container from "../../common/Container";
 import { SvgIcon } from "../../common/SvgIcon";
@@ -30,10 +30,12 @@ const Header = ({ t }: any) => {
   const onClose = () => {
     setVisibility(!visible);
   };
-
+const history = useHistory();
   const MenuItem = () => {
      const handleChange = (language: string) => {
     i18n.changeLanguage(language);
+history.push(`?lng=`+language);
+
   };
 
     const scrollTo = (id: string) => {

@@ -2,7 +2,7 @@ import { Row, Col } from "antd";
 import { withTranslation } from "react-i18next";
 import { SvgIcon } from "../../common/SvgIcon";
 import Container from "../../common/Container";
-
+import {useHistory} from 'react-router-dom';
 import i18n from "i18next";
 import { 
   FooterSection,
@@ -27,8 +27,11 @@ interface SocialLinkProps {
 }
 
 const Footer = ({ t }: any) => {
+
+const history = useHistory();
   const handleChange = (language: string) => {
     i18n.changeLanguage(language);
+    history.push(`?lng=`+language);
   };
 
   const SocialLink = ({ href, src }: SocialLinkProps) => {

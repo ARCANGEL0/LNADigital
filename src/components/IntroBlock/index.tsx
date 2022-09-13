@@ -1,9 +1,15 @@
 import { Row, Col } from "antd";
+import {useState, useEffect} from 'react';
 import { withTranslation } from "react-i18next";
 import { SvgIcon } from "../../common/SvgIcon";
 import { Button } from "../../common/Button";
 import { ContentBlockProps } from "../ContentBlock/types";
 import { Fade } from "react-awesome-reveal";
+import Helmet from 'react-helmet';
+
+
+
+
 import {
   IntroBlockContainer,
   Content,
@@ -29,8 +35,53 @@ const IntroBlock = ({
       behavior: "smooth",
     });
   };
+
+
+
   return (
+
+
     <IntroBlockContainer id={id} >
+     
+<Helmet>
+                <title>{t('Digital Solutions and Marketing | LNA Digital Agency')}</title>
+                <meta name="description" content={t('DESCRIPTION')} />
+             
+        <meta name="robots" content="index,follow"/>
+     <link rel="canonical" href="https://lnadigital.com" />
+
+   <meta property="og:locale" content="pt_BR" />
+
+
+
+        <meta property="og:title" content="{t('Digital Solutions and Marketing | LNA Digital Agency')}" />
+     
+
+
+        <meta property="og:description" content="{t('DESCRIPTION')}" />
+        <meta property="og:image" content="Image URL representing my website" />
+        <meta property="og:image:width" content="Image Width" />
+        <meta property="og:image:height" content="Image Height" />
+        <meta property="og:image:alt" content="Image alternative text, if the image is missing" />
+        <meta property="og:image:type" content="image/png (or other i.e. image/jpeg, image/gif)" />
+        <meta property="og:url" content="https://lnadigital.com" />
+        <meta property="og:site_name" content="{t('Digital Solutions and Marketing | LNA Digital Agency')}" />
+        
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:site" content="https://lnadigital.com"/>
+        <meta name="twitter:title" content="SEO HTML Meta Tag Reference List"/>
+        <meta name="twitter:creator" content=""/>
+        <meta name="twitter:description" content="A list of all the useful meta tags, and a quick start HTML template"/>
+        <meta name="twitter:image" content=""/>
+
+
+
+
+
+   </Helmet>
+
+
+
       <Fade direction="right">
         <Row justify="space-between" align="middle" className={rowClass}>
           

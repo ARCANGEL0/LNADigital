@@ -814,11 +814,11 @@ text-align: center;
 }
 .ant-card-head::before {
   content: "";
-  border: 10px solid;
+  border: 11px solid;
   border-color: rgb(95,0,0) rgb(95,0,0) transparent transparent;
   position: absolute;
-  left: -20px;
-  bottom: 48vh;
+  left: -22px;
+  bottom: 47.2vh;
 
 
 
@@ -934,13 +934,13 @@ only screen and (min-device-pixel-ratio : 1.5) {
          
         }
 
-    right: -20px !important;
+    right: -22px !important;
       content: "";
-  border: 10px solid;
+  border: 11px solid;
   border-color: rgb(95,0,0) rgb(95,0,0) transparent transparent;
   position: absolute;
 
-  bottom: 48vh;
+  bottom: 47.2vh;
 }
 
 .ant-card-head::after {

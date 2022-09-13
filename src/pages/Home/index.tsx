@@ -1,10 +1,11 @@
-import { lazy, useState } from "react";
+import { lazy, useState,useEffect } from "react";
 
 import IntroContent from "../../content/IntroContent.json";
 import AboutContent from "../../content/AboutContent.json";
 import EndingBlock from "../../content/EndingBlock.json";
 import ContactContent from "../../content/ContactContent.json";
 import ServicesContent from "../../content/ServicesContent.json";
+import i18n from "i18next";
 
 import { CircleSpinnerOverlay } from 'react-spinner-overlay'
 
@@ -16,13 +17,43 @@ const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
 const ContentBlock = lazy(() => import("../../components/ContentBlock"));
 const GalleryBlock = lazy(() => import("../../components/Gallery"));
 const IntroBlock = lazy(() => import("../../components/IntroBlock"));
+
+
+
+  const param= new URLSearchParams(window.location.search) 
+    let lng = param.get('lng') 
+
+
+
 const Home = () => {
 
     const [loading, setLoading] = useState(false)
 
+
+useEffect( () => {
+
+ const params = new URLSearchParams(window.location.search) 
+  
+if(params.has('lng')) {
+const data: string = params.get('lng') | null;
+
+    i18n.changeLanguage(data);
+
+}
+else {
+		  i18n.changeLanguage('ptbr');
+}
+
+
+
+} );
+
+
   function carregar(estado: any) {
       setLoading(estado);
     }
+
+
   return (
     <Container>
     <ScrollToTop/>
