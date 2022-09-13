@@ -35,7 +35,7 @@ useEffect( () => {
  const params = new URLSearchParams(window.location.search) 
   
 if(params.has('lng')) {
-const data: string = params.get('lng') | null;
+const data: string = params.get('lng')!;
 
     i18n.changeLanguage(data);
 
