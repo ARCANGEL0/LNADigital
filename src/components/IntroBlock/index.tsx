@@ -51,30 +51,30 @@ const IntroBlock = ({
      <link rel="canonical" href="https://lnadigital.com" />
 
    <meta property="og:locale" content="pt_BR" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 
-
-        <meta property="og:title" content={t('Digital Solutions and Marketing | LNA Digital Agency')} />
+<meta name="google-site-verification" content="..."/>
+        <meta property="og:title" content={t('More than an agency, we are a team dedicated to results and goals and we offer innovative solutions for your business, improving your marketing and digital appearance and boosting your reach!')} />
      
 
-<meta name="keywords" content={t('Digital marketing, digital design, marketing solutions, seo, seo optimization,marketing, target ad, social media, email marketing, marketing strategy, seo services,websites, graphical design, logo design, website design, web development, brand, paid traffic, software, ecommerce, communication, advertising, ads, web agency, wordpress, design, target audience, graphic design, logos, website creation, digital design, responsive website, app, mobile, sales, salesforce, strategy, commerce, commercial')}/>
+<meta name="keywords" content={t('Logos, Digital Advice,Frontend development, store,social networks, publicity, paid posts, Digital marketing, digital design, marketing solutions, seo, seo optimization,marketing, target ad, social media, email marketing, marketing strategy, seo services,websites, graphical design, logo design, website design, web development, brand, paid traffic, software, ecommerce, communication, advertising, ads, web agency, wordpress, design, target audience, graphic design, logos, website creation, digital design, responsive website, app, mobile, sales, salesforce, strategy, commerce, commercial')}/>
         <meta property="og:description" content={t("We are specialists in marketing and strategic solutions that will help you boost the reach of your business and accelerate your company's growth by masterfully implementing innovative strategies and solutions for your trade, attracting more customers and expanding your target audience. Get results right away! Contact us!")} />
-        <meta property="og:image" content="Image URL representing my website" />
-        <meta property="og:image:width" content="Image Width" />
-        <meta property="og:image:height" content="Image Height" />
+        <meta property="og:image" content="https://lnadigital.com/img/svg/logo.png" />
+       
       <meta property="og:type" content="website" />
 
-        <meta property="og:image:alt" content="Image alternative text, if the image is missing" />
-        <meta property="og:image:type" content="image/png (or other i.e. image/jpeg, image/gif)" />
+        <meta property="og:image:alt" content="LNA Assessoria Digital" />
+        <meta property="og:image:type" content="image/png" />
         <meta property="og:url" content="https://lnadigital.com" />
         <meta property="og:site_name" content={t('Digital Solutions and Marketing | LNA Digital Agency')} />
         
         <meta name="twitter:card" content="summary_large_image"/>
         <meta name="twitter:site" content="https://lnadigital.com"/>
-        <meta name="twitter:title" content="SEO HTML Meta Tag Reference List"/>
-        <meta name="twitter:creator" content=""/>
-        <meta name="twitter:description" content="A list of all the useful meta tags, and a quick start HTML template"/>
-        <meta name="twitter:image" content=""/>
+        <meta name="twitter:title" content={t('Digital Solutions and Marketing | LNA Digital Agency')}/>
+        <meta name="twitter:creator" content="ARCANGELO"/>
+        <meta name="twitter:description" content={t('More than an agency, we are a team dedicated to results and goals and we offer innovative solutions for your business, improving your marketing and digital appearance and boosting your reach!')} />
+        <meta name="twitter:image" content="https://lnadigital.com/img/svg/logo.png"/>
 
 
 
