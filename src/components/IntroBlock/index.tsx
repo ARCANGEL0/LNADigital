@@ -57,7 +57,7 @@ const IntroBlock = ({
         <meta property="og:title" content={t('Digital Solutions and Marketing | LNA Digital Agency')} />
      
 
-<meta name="keywords" content={t('Digital marketing, digital design, marketing solutions, seo, seo optimization,marketing, target ad, social media, email marketing, marketing strategy, seo services,websites, graphical design, logo design, website design, web development, brand, paid traffic, software, ecommerce, communication, advertising, ads, web agency, wordpress, design, target audience, graphic design, logos, website creation, digital design, responsive website, app, mobile, sales, salesforce, strategy, commerce, commercial')}>
+<meta name="keywords" content={t('Digital marketing, digital design, marketing solutions, seo, seo optimization,marketing, target ad, social media, email marketing, marketing strategy, seo services,websites, graphical design, logo design, website design, web development, brand, paid traffic, software, ecommerce, communication, advertising, ads, web agency, wordpress, design, target audience, graphic design, logos, website creation, digital design, responsive website, app, mobile, sales, salesforce, strategy, commerce, commercial')}/>
         <meta property="og:description" content={t("We are specialists in marketing and strategic solutions that will help you boost the reach of your business and accelerate your company's growth by masterfully implementing innovative strategies and solutions for your trade, attracting more customers and expanding your target audience. Get results right away! Contact us!")} />
         <meta property="og:image" content="Image URL representing my website" />
         <meta property="og:image:width" content="Image Width" />
