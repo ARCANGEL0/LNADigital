@@ -45,7 +45,7 @@ const IntroBlock = ({
      
 <Helmet>
                 <title>{t('Digital Solutions and Marketing | LNA Digital Agency')}</title>
-                <meta name="description" content={t('DESCRIPTION')} />
+                <meta name="description" content={t("We are specialists in marketing and strategic solutions that will help you boost the reach of your business and accelerate your company's growth by masterfully implementing innovative strategies and solutions for your trade, attracting more customers and expanding your target audience. Get results right away! Contact us!")} />
              
         <meta name="robots" content="index,follow"/>
      <link rel="canonical" href="https://lnadigital.com" />
@@ -54,18 +54,20 @@ const IntroBlock = ({
 
 
 
-        <meta property="og:title" content="{t('Digital Solutions and Marketing | LNA Digital Agency')}" />
+        <meta property="og:title" content={t('Digital Solutions and Marketing | LNA Digital Agency')} />
      
 
-
-        <meta property="og:description" content="{t('DESCRIPTION')}" />
+<meta name="keywords" content={t('Digital marketing, digital design, marketing solutions, seo, seo optimization,marketing, target ad, social media, email marketing, marketing strategy, seo services,websites, graphical design, logo design, website design, web development, brand, paid traffic, software, ecommerce, communication, advertising, ads, web agency, wordpress, design, target audience, graphic design, logos, website creation, digital design, responsive website, app, mobile, sales, salesforce, strategy, commerce, commercial')}>
+        <meta property="og:description" content={t("We are specialists in marketing and strategic solutions that will help you boost the reach of your business and accelerate your company's growth by masterfully implementing innovative strategies and solutions for your trade, attracting more customers and expanding your target audience. Get results right away! Contact us!")} />
         <meta property="og:image" content="Image URL representing my website" />
         <meta property="og:image:width" content="Image Width" />
         <meta property="og:image:height" content="Image Height" />
+      <meta property="og:type" content="website" />
+
         <meta property="og:image:alt" content="Image alternative text, if the image is missing" />
         <meta property="og:image:type" content="image/png (or other i.e. image/jpeg, image/gif)" />
         <meta property="og:url" content="https://lnadigital.com" />
-        <meta property="og:site_name" content="{t('Digital Solutions and Marketing | LNA Digital Agency')}" />
+        <meta property="og:site_name" content={t('Digital Solutions and Marketing | LNA Digital Agency')} />
         
         <meta name="twitter:card" content="summary_large_image"/>
         <meta name="twitter:site" content="https://lnadigital.com"/>

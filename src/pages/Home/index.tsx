@@ -21,7 +21,6 @@ const IntroBlock = lazy(() => import("../../components/IntroBlock"));
 
 
   const param= new URLSearchParams(window.location.search) 
-    let lng = param.get('lng') 
 
 
 
