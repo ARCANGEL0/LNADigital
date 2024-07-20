@@ -105,10 +105,11 @@ const history = useHistory();
        
 
             </Col>
-<Col sm={12} xs={12} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            
+            <Col sm={12} xs={12} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <Label htmlFor="select-lang">{t("Language")}</Label>
   
-  <LanguageSwitchContainer>
+  <LanguageSwitchContainer style={{ display: 'flex', justifyContent: 'center', marginTop: '10px' }}>
     <LanguageSwitch onClick={() => handleChange("enus")}>
       <SvgIcon
         className=""
@@ -141,6 +142,7 @@ const history = useHistory();
     </LanguageSwitch>
   </LanguageSwitchContainer>
 </Col>
+
           </Row>
         </Container>
       </FooterSection>
