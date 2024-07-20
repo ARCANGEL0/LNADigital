@@ -66,7 +66,7 @@ const history = useHistory();
                 <Chat>{t(`Let's Chat`)}</Chat>
               </a>
             </Col>
-            <Col className="socialCol">
+            <Col className="socialCol" lg={4} md={8} sm={12} xs={12}>
               <Title>{t("Social Links")}</Title>
                              &nbsp;&nbsp;
               <SocialLink
@@ -104,7 +104,7 @@ const history = useHistory();
        
 
             </Col>
-            <Col sm={12} xs={12}>
+            <Col sm={12} xs={12} className="d-flex justify-content-center">
               <Label htmlFor="select-lang">{t("Language")}</Label>
               <LanguageSwitchContainer>
                 <LanguageSwitch onClick={() => handleChange("enus")}>
