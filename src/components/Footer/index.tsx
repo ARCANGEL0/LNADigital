@@ -105,41 +105,42 @@ const history = useHistory();
        
 
             </Col>
-            <Col sm={12} xs={12}>
-              <Label htmlFor="select-lang">{t("Language")}</Label>
-              <LanguageSwitchContainer>
-                <LanguageSwitch onClick={() => handleChange("enus")}>
-                  <SvgIcon
-                   className=""
-                  imgId="footerUS"
-                    src="us.png"
-                    aria-label="homepage"
-                    width="30px"
-                    height="30px"
-                  />
-                </LanguageSwitch>
-                <LanguageSwitch onClick={() => handleChange("ptbr")}>
-                  <SvgIcon
-                   className=""
-                  imgId="footerBR"
-                    src="brazil.png"
-                    aria-label="homepage"
-                    width="30px"
-                    height="30px"
-                  />
-                </LanguageSwitch>
-                 <LanguageSwitch onClick={() => handleChange("eses")}>
-                  <SvgIcon
-                   className=""
-                  imgId="footerES"
-                    src="spanish.png"
-                    aria-label="homepage"
-                    width="30px"
-                    height="30px"
-                  />
-                </LanguageSwitch>
-              </LanguageSwitchContainer>
-            </Col>
+<Col sm={12} xs={12} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+  <Label htmlFor="select-lang">{t("Language")}</Label>
+  
+  <LanguageSwitchContainer>
+    <LanguageSwitch onClick={() => handleChange("enus")}>
+      <SvgIcon
+        className=""
+        imgId="footerUS"
+        src="us.png"
+        aria-label="homepage"
+        width="30px"
+        height="30px"
+      />
+    </LanguageSwitch>
+    <LanguageSwitch onClick={() => handleChange("ptbr")}>
+      <SvgIcon
+        className=""
+        imgId="footerBR"
+        src="brazil.png"
+        aria-label="homepage"
+        width="30px"
+        height="30px"
+      />
+    </LanguageSwitch>
+    <LanguageSwitch onClick={() => handleChange("eses")}>
+      <SvgIcon
+        className=""
+        imgId="footerES"
+        src="spanish.png"
+        aria-label="homepage"
+        width="30px"
+        height="30px"
+      />
+    </LanguageSwitch>
+  </LanguageSwitchContainer>
+</Col>
           </Row>
         </Container>
       </FooterSection>
