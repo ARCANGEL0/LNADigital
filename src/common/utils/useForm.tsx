@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import emailjs from '@emailjs/browser';
 
-// Define types for form values and errors
 type FormValues = {
   name: string;
   email: string;
@@ -14,7 +13,6 @@ type FormErrors = {
   message?: string;
 };
 
-// Validation function to check form values
 const validate = (values: FormValues): FormErrors => {
   let errors: FormErrors = {};
 
@@ -44,12 +42,11 @@ export const useForm = (
   const [shouldSubmit, setShouldSubmit] = useState(false);
   const [emailSent, setEmailSent] = useState(false);
 
-  const handleSubmit = (event: React.ChangeEvent<HTMLFormElement>) => {
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const validationErrors = validate(values);
     setErrors(validationErrors);
 
-    // Trigger submission if no errors
     if (Object.keys(validationErrors).length === 0) {
       setShouldSubmit(true);
     }
@@ -70,12 +67,13 @@ export const useForm = (
           carregar(false);
           openNotificationWithIcon('success');
           setEmailSent(true);
-          console.log('SUCCESS!', response.status, response.text);
         })
         .catch(error => {
           carregar(false);
           openNotificationWithIcon('error');
-          console.log('FAILED...', error);
+        })
+        .finally(() => {
+          setShouldSubmit(false);
         });
     }
   }, [shouldSubmit]);
@@ -83,7 +81,6 @@ export const useForm = (
   useEffect(() => {
     if (emailSent) {
       setValues({ name: '', email: '', message: '' });
-      setShouldSubmit(false);
       setEmailSent(false);
     }
   }, [emailSent]);
