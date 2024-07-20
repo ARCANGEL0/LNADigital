@@ -74,6 +74,7 @@ const history = useHistory();
                 src="whatsPT.svg"
               />
               
+          &nbsp;&nbsp;&nbsp;
           
                <SocialLink
                 href="https://www.facebook.com/profile.php?id=100082874455658"
@@ -103,7 +104,7 @@ const history = useHistory();
        
 
             </Col>
-            <Col lg={3} md={3} sm={6} xs={6}>
+            <Col lg={3} md={} sm={12} xs={12}>
               <Label htmlFor="select-lang">{t("Language")}</Label>
               <LanguageSwitchContainer>
                 <LanguageSwitch onClick={() => handleChange("enus")}>
