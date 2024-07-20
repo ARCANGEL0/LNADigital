@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import emailjs from '@emailjs/browser';
-import { validate as validateType } from './validationRules'; // Ensure proper import path
 
 type FormValues = {
   name: string;
@@ -15,7 +14,6 @@ type FormErrors = {
 };
 
 export const useForm = (
-  validate: (values: FormValues) => FormErrors,
   carregar: (loading: boolean) => void,
   openNotificationWithIcon: (type: 'success' | 'error') => void
 ) => {
@@ -26,10 +24,11 @@ export const useForm = (
 
   const handleSubmit = (event: React.ChangeEvent<HTMLFormElement>) => {
     event.preventDefault();
-    setErrors(validate(values));
+    const validationErrors = validate(values);
+    setErrors(validationErrors);
 
     // Trigger submission if no errors
-    if (Object.keys(errors).length === 0) {
+    if (Object.keys(validationErrors).length === 0) {
       setShouldSubmit(true);
     }
   };
