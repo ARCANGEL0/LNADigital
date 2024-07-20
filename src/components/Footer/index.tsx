@@ -69,18 +69,16 @@ const history = useHistory();
             <Col className="socialCol" lg={8} md={8} sm={12} xs={12}>
               <Title>{t("Social Links")}</Title>
                              &nbsp;&nbsp;
-
-               <SocialLink
-                href="https://www.facebook.com/profile.php?id=100082874455658"
-                src="face.svg"
-              />
-               &nbsp;&nbsp;&nbsp;
-
               <SocialLink
                 href="https://api.whatsapp.com/send?phone=351927285125"
                 src="whatsPT.svg"
               />
               
+          
+               <SocialLink
+                href="https://www.facebook.com/profile.php?id=100082874455658"
+                src="face.svg"
+              />
                &nbsp;&nbsp;&nbsp;
 
               <SocialLink
@@ -105,7 +103,7 @@ const history = useHistory();
        
 
             </Col>
-            <Col lg={3} md={3} sm={12} xs={12}>
+            <Col lg={3} md={3} sm={6} xs={6}>
               <Label htmlFor="select-lang">{t("Language")}</Label>
               <LanguageSwitchContainer>
                 <LanguageSwitch onClick={() => handleChange("enus")}>
