@@ -104,7 +104,7 @@ const history = useHistory();
        
 
             </Col>
-            <Col lg={3} md={6} sm={12} xs={12}>
+            <Col sm={12} xs={12}>
               <Label htmlFor="select-lang">{t("Language")}</Label>
               <LanguageSwitchContainer>
                 <LanguageSwitch onClick={() => handleChange("enus")}>
