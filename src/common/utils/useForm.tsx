@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import emailjs from '@emailjs/browser';
 
+// Define types for form values and errors
 type FormValues = {
   name: string;
   email: string;
@@ -11,6 +12,27 @@ type FormErrors = {
   name?: string;
   email?: string;
   message?: string;
+};
+
+// Validation function to check form values
+const validate = (values: FormValues): FormErrors => {
+  let errors: FormErrors = {};
+
+  if (!values.name) {
+    errors.name = 'Name is required';
+  }
+
+  if (!values.email) {
+    errors.email = 'Email is required';
+  } else if (!/\S+@\S+\.\S+/.test(values.email)) {
+    errors.email = 'Email address is invalid';
+  }
+
+  if (!values.message) {
+    errors.message = 'Message is required';
+  }
+
+  return errors;
 };
 
 export const useForm = (
