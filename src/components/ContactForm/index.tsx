@@ -1,4 +1,4 @@
-import { Row, Col, notification } from "antd";
+import { Row, Col } from "antd";
 import { withTranslation } from "react-i18next";
 import { Slide, Zoom } from "react-awesome-reveal";
 import { ContactProps, ValidationTypeProps } from "./types";
@@ -8,29 +8,41 @@ import { Button } from "../../common/Button";
 import Block from "../Block";
 import Input from "../../common/Input";
 import TextArea from "../../common/TextArea";
+import { notification } from "antd";
 
 import { ContactContainer, FormGroup, Span, ButtonContainer } from "./styles";
 
-const Contact = ({ title, content, id, t, carregar }: ContactProps) => {
-  const openNotificationWithIcon = (tipo: string) => {
-    if (tipo === 'success') {
-      notification.success({
-        message: t("Success"),
-        description: t("Message sent!"),
-      });
-    } else if (tipo === 'error') {
-      notification.error({
-        message: t("Error"),
-        description: t("Message not sent!"),
-      });
+
+const Contact = ({ title, content, id, t, carregar }: ContactProps, ) => {
+
+ 
+   const openNotificationWithIcon = (tipo : any) => {
+
+    if(tipo == 'success') {
+
+      notification["success"]({
+      message: t("Success"),
+      description: t("Message sent!"),
+    });
+
     }
+
+    else if (tipo == 'error' ) {
+      notification["error"]({
+      message: t("Error"),
+      description: t("Message not sent!"),
+    });
+
+    }
+  
   };
 
+
+
+
   const { values, errors, handleChange, handleSubmit } = useForm(
-    validate,
-    carregar,
-    openNotificationWithIcon
-  );
+    validate, carregar, openNotificationWithIcon
+  ) as any;
 
   const ValidationType = ({ type }: ValidationTypeProps) => {
     const ErrorMessage = errors[type];
@@ -49,14 +61,14 @@ const Contact = ({ title, content, id, t, carregar }: ContactProps) => {
             <Block title={title} content={content} />
           </Slide>
         </Col>
-        <Col lg={12} md={12} sm={24} xs={24}>
+        <Col lg={12} md={12} sm={24} xs={24}> 
           <Slide direction="right">
-            <FormGroup autoComplete="off" onSubmit={handleSubmit} noValidate>
+            <FormGroup autoComplete="off" onSubmit={handleSubmit}>
               <Col span={24}>
                 <Input
                   type="text"
-                  name="name"
-                  placeholder={t("Your Name")}
+                  name="Name"
+                  placeholder="Your Name"
                   value={values.name || ""}
                   onChange={handleChange}
                 />
@@ -66,8 +78,8 @@ const Contact = ({ title, content, id, t, carregar }: ContactProps) => {
               <Col span={24}>
                 <Input
                   type="text"
-                  name="email"
-                  placeholder={t("Your Email")}
+                  name="Email"
+                  placeholder="Your Email"
                   value={values.email || ""}
                   onChange={handleChange}
                 />
@@ -75,17 +87,15 @@ const Contact = ({ title, content, id, t, carregar }: ContactProps) => {
               </Col>
               <Col span={24}>
                 <TextArea
-                  placeholder={t("Your Message")}
+                  placeholder="Your Message"
                   value={values.message || ""}
-                  name="message"
+                  name="Message"
                   onChange={handleChange}
                 />
                 <ValidationType type="message" />
               </Col>
               <ButtonContainer>
-                <Button className="contactSubmit" name="submit">
-                  {t("Submit")}
-                </Button>
+                <Button className="contactSubmit" name="submit">{t("Submit")}</Button>
               </ButtonContainer>
             </FormGroup>
           </Slide>
