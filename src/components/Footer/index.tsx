@@ -66,7 +66,7 @@ const history = useHistory();
                 <Chat>{t(`Let's Chat`)}</Chat>
               </a>
             </Col>
-            <Col className="socialCol" lg={4} md={8} sm={12} xs={12}>
+            <Col className="socialCol d-flex justify-content-center" lg={4} md={8} sm={12} xs={12}>
               <Title>{t("Social Links")}</Title>
                              &nbsp;&nbsp;
               <SocialLink
