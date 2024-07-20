@@ -1,75 +1,79 @@
 import { useState, useEffect } from "react";
 import emailjs from '@emailjs/browser';
-import axios from "axios";
+import { validate as validateType } from './validationRules'; // Ensure proper import path
 
-export const useForm = (validate: any, carregar: any, openNotificationWithIcon: any) => {
-  const [values, setValues] = useState({});
-  const [errors, setErrors] = useState({});
+type FormValues = {
+  name: string;
+  email: string;
+  message: string;
+};
+
+type FormErrors = {
+  name?: string;
+  email?: string;
+  message?: string;
+};
+
+export const useForm = (
+  validate: (values: FormValues) => FormErrors,
+  carregar: (loading: boolean) => void,
+  openNotificationWithIcon: (type: 'success' | 'error') => void
+) => {
+  const [values, setValues] = useState<FormValues>({ name: '', email: '', message: '' });
+  const [errors, setErrors] = useState<FormErrors>({});
   const [shouldSubmit, setShouldSubmit] = useState(false);
- const [emailsent, setEmailsent] = useState(false);
- 
+  const [emailSent, setEmailSent] = useState(false);
 
   const handleSubmit = (event: React.ChangeEvent<HTMLFormElement>) => {
     event.preventDefault();
- 
-
     setErrors(validate(values));
 
-    // Your url for API
-
-    if (Object.keys(values).length === 3 && shouldSubmit) {
-
-        carregar(true)
-   
-
-var templateParams = {
-    from_name: Object.values(values)[0],
-    reply_to: Object.values(values)[1],
-    message: Object.values(values)[2],
-
-
-};
- 
-emailjs.send('service_tsqncfl', 'template_n281ssn', templateParams, 'VPWshh0QHyiBo4Lc_') 
-    .then(function(response) {
-    carregar(false);
-    openNotificationWithIcon('success');
-     setEmailsent(true);
-       console.log('SUCCESS!', response.status, response.text);
-    }, function(error) {
-          carregar(false);
-
-           openNotificationWithIcon('error');
-       console.log('FAILED...', error);
-    });
-  
-
-          
-     
+    // Trigger submission if no errors
+    if (Object.keys(errors).length === 0) {
+      setShouldSubmit(true);
     }
   };
 
   useEffect(() => {
+    if (shouldSubmit) {
+      carregar(true);
 
-    if(Object.keys(errors).length === 0) 
-    {
-      setShouldSubmit(true)
+      const templateParams = {
+        from_name: values.name,
+        reply_to: values.email,
+        message: values.message,
+      };
+
+      emailjs.send('service_tsqncfl', 'template_n281ssn', templateParams, 'VPWshh0QHyiBo4Lc_')
+        .then(response => {
+          carregar(false);
+          openNotificationWithIcon('success');
+          setEmailSent(true);
+          console.log('SUCCESS!', response.status, response.text);
+        })
+        .catch(error => {
+          carregar(false);
+          openNotificationWithIcon('error');
+          console.log('FAILED...', error);
+        });
     }
-    if (emailsent) {
+  }, [shouldSubmit]);
 
-      setValues("");
-      setShouldSubmit(false)
-      setEmailsent(false)
+  useEffect(() => {
+    if (emailSent) {
+      setValues({ name: '', email: '', message: '' });
+      setShouldSubmit(false);
+      setEmailSent(false);
     }
-  }, [errors, shouldSubmit]);
+  }, [emailSent]);
 
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    event.persist();
-    setValues((values) => ({
-      ...values,
-      [event.target.name]: event.target.value,
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = event.target;
+    setValues((prevValues) => ({
+      ...prevValues,
+      [name]: value,
     }));
-    setErrors((errors) => ({ ...errors, [event.target.name]: "" }));
+    setErrors((prevErrors) => ({ ...prevErrors, [name]: "" }));
   };
 
   return {
