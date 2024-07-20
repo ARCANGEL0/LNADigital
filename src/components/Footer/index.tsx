@@ -77,8 +77,15 @@ const history = useHistory();
                &nbsp;&nbsp;&nbsp;
 
               <SocialLink
-                href="https://api.whatsapp.com/send?phone=5513988032388"
-                src="whats.svg"
+                href="https://api.whatsapp.com/send?phone=351927285125"
+                src="whatsPT.svg"
+              />
+              
+               &nbsp;&nbsp;&nbsp;
+
+              <SocialLink
+                href="https://api.whatsapp.com/send?phone=5513988800596"
+                src="whatsBR.svg"
               />
                             
                  <br/>
