@@ -41,7 +41,7 @@ const Contact = ({ title, content, id, t, carregar }: ContactProps, ) => {
 
 
   const { values, errors, handleChange, handleSubmit } = useForm(
-    validate, carregar, openNotificationWithIcon
+    carregar, openNotificationWithIcon
   ) as any;
 
   const ValidationType = ({ type }: ValidationTypeProps) => {
