@@ -2,7 +2,7 @@
   "name": "lna",
   "version": "0.1.0",
   "private": true,
- "homepage": "http://lnaassessoriadigital.com",
+ "homepage": "https://lnaassessoriadigital.com/",
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
     "@emailjs/browser": "^3.7.0",
