@@ -2,9 +2,9 @@ import { withTranslation } from "react-i18next";
 import styled from "styled-components";
 
 interface Props {
-  title: string;
-  content: string;
-  t: any;
+  title?: string;
+  content?: string;
+  t?: any;
 }
 
 // Estilos usando styled-components
