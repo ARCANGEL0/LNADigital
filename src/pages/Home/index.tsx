@@ -12,6 +12,7 @@ import { CircleSpinnerOverlay } from 'react-spinner-overlay'
  
 const Contact = lazy(() => import("../../components/ContactForm"));
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
+const WhatsIco = lazy(() => import("../../components/WhatsIco/"));
 const Container = lazy(() => import("../../common/Container"));
 const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
 const ContentBlock = lazy(() => import("../../components/ContentBlock"));
@@ -94,7 +95,8 @@ else {
                 height="100%"
 
       />
- 
+      <WhatsIco title="WhatsApp" content="Entre em contato" />
+      
   <ContentBlock
         type="right"
         title={IntroContent.titlethree}
