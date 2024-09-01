@@ -6,8 +6,20 @@ interface Props {
   content?: string;
   t?: any;
 }
+// Defina a animação de pulsação
+const pulse = keyframes`
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+`;
 
-// Estilos usando styled-components
+// Estilos do botão com a animação de pulsação
 const WhatsAppButtonWrapper = styled.a`
   position: fixed;
   bottom: 20px;
@@ -17,8 +29,9 @@ const WhatsAppButtonWrapper = styled.a`
   cursor: pointer;
 
   img {
-    width: 50px;
-    height: 50px;
+    width: 90px;
+    height: 90px;
+    animation: ${pulse} 2s infinite;
 
     &:hover {
       opacity: 0.8;
