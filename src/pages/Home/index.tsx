@@ -64,7 +64,7 @@ else {
        overlayColor="rgba(53,53,53,0.8)"
       />
 
-
+      <WhatsIco />
    
     <IntroBlock
         type="right"
@@ -95,7 +95,7 @@ else {
                 height="100%"
 
       />
-      <WhatsIco title="WhatsApp" content="Entre em contato" />
+
       
   <ContentBlock
         type="right"
