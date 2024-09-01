@@ -65,20 +65,7 @@ else {
       />
 
       <WhatsIco />
-     
-    <IntroBlock
-        type="right"
-        title={IntroContent.title}
-        content={IntroContent.text}
-        button={IntroContent.button}
-        icon="bannerintro.gif"
-        id="intro"
-                imgId="introgif" 
-                width=""
-                height=""
-        rowClass="introRow"
-
-      />
+   
     <IntroBlock
         type="right"
         title={IntroContent.title}
