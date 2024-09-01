@@ -33,10 +33,8 @@ const WhatsIco = ({ title, content, t }: Props) => {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <img
-        src="./logo512.png" // Substitua pelo caminho correto do ícone do WhatsApp
-        alt="WhatsApp"
-      />
+        <img className="img" src={require("./Zap.png" )} id=""/>
+      
     </WhatsAppButtonWrapper>
   );
 };
