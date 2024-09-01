@@ -1,5 +1,5 @@
 import { withTranslation } from "react-i18next";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 interface Props {
   title?: string;
