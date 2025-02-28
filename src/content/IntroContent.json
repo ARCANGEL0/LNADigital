@@ -1,0 +1,27 @@
+{
+  "title": "\u00a0We are a Digital Agency specialized in marketing strategies and processes to expand and increase your sales.",
+  "text": "\u00a0\u00a0\u00a0\u00a0We contribute to the success and growth of your brand. \n Through communication, marketing and social media strategies we achieve high performance to achieve your goals and leverage your sales and expand the reach of your trade. ",
+  "titletwo": "The importance of Digital Marketing",
+  "texttwo": "\u00a0\u00a0\u00a0\u00a0Ever heard that establishing an online presence is critical to the growth of any type of business? Well, with the connected world we have today, it is practically impossible to market your products or services without using what we call Digital Marketing. \n Digital Marketing is the promotion of products or brands through digital media. It is one of the main ways companies have to communicate with the public in a direct, personalized and timely manner.",
+  "titlethree":"But what is the advantage of investing in marketing and traffic to your business?",
+  "textthree":"\u00a0\u00a0\u00a0\u00a0Nowadays practically everyone has a cell phone and internet access, and we spend an average of more than 8 hours online. How can you not use this to your advantage to promote your brand, products and services and get more customers and sales?",
+  "titlefour":"SEO & Social Media",
+  "textfour":"\u00a0\u00a0\u00a0\u00a0The best way to expand the reach obtained in your business is by making use of social networks and search engines. Standing out and being among the first results of searches and searches among a certain segment, as well as being present on popular social networks and having a service and presentation channel are the best ways to boost your sales and reach your customers!",
+"section": [
+    {
+      "title": "Target Audience",
+      "content": "\u00a0\u00a0\u00a0\u00a0Defining a target audience is one of the main steps in planning any new business. Identifying the segment that offers the most opportunities for your venture, in addition to guiding the positioning and performance of the brand in the market, is extremely important for the elaboration of marketing strategies.",
+      "icon": "marketing-movel.png"
+    },
+    {
+      "title": "Paid traffic",
+      "content": "\u00a0\u00a0\u00a0\u00a0All access your platform receives is traffic, whether it comes from search results, social networks or other internet sites. What we call “paid traffic” is precisely the strategy of investing a certain amount to attract more hits and generate more traffic.",
+      "icon": "grafico-preditivo.png"
+    }
+  ],
+  "button": [
+    {
+      "title": "See more"
+    }
+  ]
+}
